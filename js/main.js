@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (brief) messageParts.push(`• Requirements: ${brief}`);
 
       const message = messageParts.join('\n');
-      const waUrl = `https://wa.me/917498987520?text=${encodeURIComponent(message)}`;
+      const waUrl = `https://wa.me/919763569574?text=${encodeURIComponent(message)}`;
 
       // Open WhatsApp in new tab
       window.open(waUrl, '_blank');
@@ -140,6 +140,60 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }
+  }
+
+  // 3b. Contact Page Inquiry Form — Route directly to +91 97635 69574
+  const contactInquiryForm = document.getElementById('contactInquiryForm');
+  if (contactInquiryForm) {
+    contactInquiryForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const inputs = contactInquiryForm.querySelectorAll('input, select, textarea');
+      let name = '', phone = '', email = '', ptype = '', msg = '';
+      inputs.forEach(inp => {
+        if (inp.placeholder && inp.placeholder.includes('Full Name')) name = inp.value.trim();
+        if (inp.placeholder && inp.placeholder.includes('WhatsApp')) phone = inp.value.trim();
+        if (inp.type === 'email') email = inp.value.trim();
+        if (inp.tagName === 'SELECT') ptype = inp.value;
+        if (inp.tagName === 'TEXTAREA') msg = inp.value.trim();
+      });
+      const parts = [
+        '✨ *New Website Inquiry — Meera Design Studio*',
+        `• Name: ${name || 'Prospective Client'}`,
+        `• WhatsApp: ${phone || 'Not provided'}`
+      ];
+      if (email) parts.push(`• Email: ${email}`);
+      if (ptype) parts.push(`• Project Type: ${ptype}`);
+      if (msg) parts.push(`• Requirements: ${msg}`);
+
+      const waUrl = `https://wa.me/919763569574?text=${encodeURIComponent(parts.join('\n'))}`;
+      window.open(waUrl, '_blank');
+      contactInquiryForm.reset();
+      alert('Thank you! Your inquiry has been forwarded to Meera Design Studio on WhatsApp.');
+    });
+  }
+
+  // 3c. About Page Consultation Form — Route directly to +91 97635 69574
+  const aboutInquiryForm = document.getElementById('aboutInquiryForm');
+  if (aboutInquiryForm) {
+    aboutInquiryForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = aboutInquiryForm.querySelector('input[type="text"]')?.value || '';
+      const email = aboutInquiryForm.querySelector('input[type="email"]')?.value || '';
+      const phone = aboutInquiryForm.querySelector('input[type="tel"]')?.value || '';
+      const msg = aboutInquiryForm.querySelector('textarea')?.value || '';
+      const parts = [
+        '✨ *Consultation Request — Meera Design Studio*',
+        `• Name: ${name || 'Prospective Client'}`,
+        `• Phone: ${phone || 'Not provided'}`
+      ];
+      if (email) parts.push(`• Email: ${email}`);
+      if (msg) parts.push(`• Message: ${msg}`);
+
+      const waUrl = `https://wa.me/919763569574?text=${encodeURIComponent(parts.join('\n'))}`;
+      window.open(waUrl, '_blank');
+      aboutInquiryForm.reset();
+      alert('Thank you! Your consultation request has been forwarded to Meera Design Studio on WhatsApp.');
+    });
   }
 
   // 4. Project Category Tabs Filter

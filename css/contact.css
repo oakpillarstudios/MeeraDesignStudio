@@ -1503,6 +1503,18 @@ body.contact-page-body {
   .ct-nav-list {
     display: none;
   }
+  .ct-hero-geo-solid,
+  .ct-hero-geo-wire,
+  .ct-hero-geo-line {
+    display: none !important;
+  }
+  .ct-hero-card-overlay {
+    position: static;
+    max-width: 100%;
+    margin-top: 14px;
+    box-shadow: none;
+    border: 1px solid #ECE4DC;
+  }
   .ct-services-strip {
     grid-template-columns: 1fr;
     gap: 1.8rem;

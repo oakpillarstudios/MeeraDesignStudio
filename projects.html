@@ -7,46 +7,36 @@
   <meta name="description" content="Explore architectural and interior design projects by Meera Design Studio. Residential, commercial, and institutional spaces in Pune, Maharashtra.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/projects.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' stroke='%23A72C4D' stroke-width='2' fill='%23FAF8F5'/><text x='50%' y='63%' font-family='sans-serif' font-size='42' fill='%23A72C4D' text-anchor='middle'>M</text></svg>">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
 </head>
 <body class="projects-page-body">
 
   <!-- ==========================================================================
        1. NAVIGATION HEADER (BRAND & CENTURY GOTHIC)
        ========================================================================== -->
-  <header class="site-header pj-header">
-    <div class="pj-header-inner">
-      <a href="index.html" class="pj-brand" aria-label="Meera Design Studio Homepage">
-        <span class="pj-brand-title">MEERA</span>
-        <span class="pj-brand-sub">DESIGN STUDIO</span>
+  <header class="site-header projects-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-brand" aria-label="Meera Design Studio">
+        <img src="assets/logo/icon.png" alt="Meera Design Studio Icon" class="brand-symbol-img">
+        <div class="brand-text">
+          <span class="brand-name">MEERA DESIGN STUDIO</span>
+          <span class="brand-label">ARCHITECTURE • INTERIORS • PLANNING</span>
+        </div>
       </a>
 
       <nav aria-label="Main Navigation">
-        <ul class="pj-nav-list" id="pjMainNav">
-          <li><a href="index.html" class="pj-nav-link">Home</a></li>
-          <li><a href="about.html" class="pj-nav-link">About Us</a></li>
-          <li><a href="projects.html" class="pj-nav-link active">Projects</a></li>
-          <li><a href="about.html#awardsSection" class="pj-nav-link">Awards</a></li>
-          <li><a href="contact.html" class="pj-nav-link">Contact</a></li>
+        <ul class="header-nav" id="mainNav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="mobile-nav-cta-item"><a href="contact.html" class="mobile-drawer-cta">START CONSULTATION &rarr;</a></li>
         </ul>
       </nav>
 
-      <!-- Hamburger Menu with Two Burgundy Lines -->
-      <button class="pj-menu-btn" id="pjMenuBtn" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <!-- Mobile Drawer Nav -->
-    <div class="pj-mobile-nav" id="pjMobileNav">
-      <ul class="pj-mobile-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="about.html#awardsSection">Awards</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="header-actions">
+        <a href="contact.html" class="header-cta">GET IN TOUCH &rarr;</a>
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle Navigation">&#9776;</button>
+      </div>
     </div>
   </header>
 
@@ -455,85 +445,101 @@
   <!-- ==========================================================================
        5. FOOTER (BRAND & ARCHITECTURAL IDENTITY)
        ========================================================================== -->
-  <footer class="pj-footer">
-    <div class="pj-container">
-      <div class="pj-footer-grid">
-        
-        <!-- Col 1: Studio Brand -->
-        <div class="pj-footer-col">
-          <a href="index.html" class="pj-brand" aria-label="Meera Design Studio Homepage">
-            <span class="pj-brand-title">MEERA</span>
-            <span class="pj-brand-sub">DESIGN STUDIO</span>
+  <!-- ==========================================================================
+       UNIFIED STUDIO FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+
+        <!-- Col 1: Studio Brand & Logo -->
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="footer-brand-logo-link" aria-label="Meera Design Studio Homepage">
+            <img src="assets/logo/logo.png" alt="Meera Design Studio" class="footer-logo-img">
           </a>
-          <p class="pj-footer-tagline">
-            Architecture, Interior Architecture &amp; Structural Engineering. Awarded Maharashtra Business Award Winner 2025.
+          <p class="footer-brand-tagline">ARCHITECTURE • INTERIORS • PLANNING</p>
+          <p class="footer-brand-desc">
+            Thoughtfully crafted architectural and interior spaces balancing contextual elegance, function, and enduring value across Maharashtra.
           </p>
-        </div>
-
-        <!-- Col 2: Navigation -->
-        <div class="pj-footer-col">
-          <h4 class="pj-footer-title">Navigation</h4>
-          <ul class="pj-footer-links">
-            <li><a href="index.html" class="pj-footer-link">Home</a></li>
-            <li><a href="about.html" class="pj-footer-link">About Us</a></li>
-            <li><a href="projects.html" class="pj-footer-link">Projects</a></li>
-            <li><a href="about.html#awardsSection" class="pj-footer-link">Awards &amp; Empanelments</a></li>
-            <li><a href="contact.html" class="pj-footer-link">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Direct Connect -->
-        <div class="pj-footer-col">
-          <h4 class="pj-footer-title">Connect</h4>
-          <ul class="pj-footer-links">
-            <li><a href="tel:+919876543210" class="pj-footer-link">+91 (Pune) 98765 43210</a></li>
-            <li><a href="mailto:hello@meeradesignstudio.com" class="pj-footer-link">hello@meeradesignstudio.com</a></li>
-            <li><span class="pj-footer-link" style="cursor: default;">Pune, Maharashtra, India</span></li>
-          </ul>
-          <div class="pj-social-row" style="margin-top: 1rem;">
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="pj-social-btn" aria-label="Instagram">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-              </svg>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" class="pj-social-btn" aria-label="LinkedIn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <a href="mailto:hello@meeradesignstudio.com" class="pj-social-btn" aria-label="Email">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </a>
+          <div class="footer-award-badge">
+            <span class="footer-award-dot"></span>
+            <span>Maharashtra Business Award Winner 2025</span>
           </div>
         </div>
 
-        <!-- Col 4: Newsletter -->
-        <div class="pj-footer-col">
-          <h4 class="pj-footer-title">Newsletter</h4>
-          <p class="pj-newsletter-desc">Subscribe to receive private invitations to monograph unveilings and architectural tours.</p>
-          <form class="pj-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Meera Design Studio updates!'); this.reset();">
-            <input type="email" class="pj-newsletter-input" placeholder="Your Email Address" required aria-label="Email for newsletter">
-            <button type="submit" class="pj-newsletter-btn" aria-label="Subscribe">&rarr;</button>
-          </form>
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col footer-col-nav">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Details (From Official Profile) -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-title">Contact Us</h4>
+          <div class="footer-contact-items">
+
+            <!-- Phone -->
+            <div class="footer-contact-row">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              <div class="footer-contact-text">
+                <span class="footer-contact-label">PHONE</span>
+                <a href="tel:+919763569574" class="footer-contact-val">+91 97635 69574</a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="footer-contact-row">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </span>
+              <div class="footer-contact-text">
+                <span class="footer-contact-label">EMAIL</span>
+                <a href="mailto:meeradesignstudio96@gmail.com" class="footer-contact-val">meeradesignstudio96@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="footer-contact-row">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </span>
+              <div class="footer-contact-text">
+                <span class="footer-contact-label">ADDRESS</span>
+                <p class="footer-contact-val">Sector No: 32A, Ravet Pradhikaran, Pune-411033.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="https://wa.me/919763569574" target="_blank" rel="noopener noreferrer" class="footer-wa-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+            <span>Chat on WhatsApp</span>
+            <span>&rarr;</span>
+          </a>
         </div>
 
       </div>
 
       <!-- Bottom Bar -->
-      <div class="pj-footer-bottom">
-        <p class="pj-footer-copy">&copy; 2026 Meera Design Studio. All Rights Reserved.</p>
-        <div class="pj-footer-legal">
-          <a href="#">Privacy Policy</a>
-          <span>|</span>
-          <a href="#">Terms of Use</a>
-        </div>
+      <div class="footer-bottom-bar">
+        <p class="footer-copy">&copy; 2019 &ndash; 2026 Meera Design Studio. All rights reserved.</p>
+        <p class="footer-loc">Pune, Maharashtra, India</p>
       </div>
     </div>
   </footer>
@@ -1843,5 +1849,6 @@
     }
   </script>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
