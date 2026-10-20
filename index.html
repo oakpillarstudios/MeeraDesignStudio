@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meera Design Studio — Architecture & Interior Design</title>
+  <meta name="description" content="Meera Design Studio is an architecture, interior design, and structural engineering practice based in Pune, Maharashtra.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' stroke='%23A72C4D' stroke-width='2' fill='%23FAF8F5'/><text x='50%' y='63%' font-family='sans-serif' font-size='42' fill='%23A72C4D' text-anchor='middle'>M</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER — REFINED FLOATING NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="header-brand" aria-label="Meera Design Studio">
+        <div class="brand-symbol">M</div>
+        <div class="brand-text">
+          <span class="brand-name">MEERA DESIGN STUDIO</span>
+          <span class="brand-label">ARCHITECTURE • INTERIORS • PLANNING</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="header-nav" id="mainNav">
+          <li><a href="#hero" class="nav-link active">HOME</a></li>
+          <li><a href="#projects" class="nav-link">PORTFOLIO</a></li>
+          <li><a href="about.html" class="nav-link">ABOUT US</a></li>
+          <li><a href="#work" class="nav-link">OUR WORK</a></li>
+          <li><a href="#transformation" class="nav-link">TRANSFORMATION</a></li>
+          <li><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
+          <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="header-cta">CONSULTATION →</a>
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. HERO — ARCHITECTURAL BLUEPRINT EDITORIAL HERO
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+
+    <!-- ── 1. ARCHITECTURAL BLUEPRINT BACKGROUND GEOMETRY (SVG CANVAS) ── -->
+    <div class="hero-bg-canvas" aria-hidden="true">
+      <svg class="hero-bg-svg" viewBox="0 0 1600 900" preserveAspectRatio="none">
+        <defs>
+          <pattern id="heroGridPattern" width="100" height="100" patternUnits="userSpaceOnUse">
+            <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#B9A99B" stroke-width="0.75" stroke-opacity="0.14"/>
+          </pattern>
+        </defs>
+
+        <!-- Base architectural grid fill -->
+        <rect width="100%" height="100%" fill="url(#heroGridPattern)"/>
+
+        <!-- Translucent pale blush geometric massing blocks (behind building) -->
+        <rect x="800" y="240" width="170" height="660" fill="#E9D9D7" fill-opacity="0.5"/>
+        <rect x="940" y="340" width="150" height="560" fill="#E9D9D7" fill-opacity="0.35"/>
+        <rect x="130" y="740" width="190" height="160" fill="#E9D9D7" fill-opacity="0.25"/>
+        <rect x="660" y="600" width="130" height="300" fill="#E9D9D7" fill-opacity="0.22"/>
+
+        <!-- Far-right solid burgundy circle / disk (Key reference focal shape) -->
+        <circle cx="1520" cy="520" r="240" fill="#A72C4D" fill-opacity="0.94"/>
+
+        <!-- Oversized concentric circular arcs radiating around building -->
+        <circle cx="1180" cy="480" r="390" fill="none" stroke="#A72C4D" stroke-width="1.4" stroke-opacity="0.32"/>
+        <circle cx="1180" cy="480" r="540" fill="none" stroke="#B9A99B" stroke-width="1.2" stroke-opacity="0.28"/>
+        <circle cx="1180" cy="480" r="690" fill="none" stroke="#A72C4D" stroke-width="1" stroke-dasharray="6 6" stroke-opacity="0.22"/>
+
+        <!-- Architectural construction guidelines & elevation lines -->
+        <!-- Vertical guide along left spine -->
+        <line x1="72" y1="0" x2="72" y2="900" stroke="#B9A99B" stroke-width="1" stroke-opacity="0.22"/>
+        <!-- Horizontal guide below header -->
+        <line x1="0" y1="120" x2="1600" y2="120" stroke="#B9A99B" stroke-width="1" stroke-opacity="0.2"/>
+        <!-- Horizontal guide across stats baseline -->
+        <line x1="0" y1="740" x2="1600" y2="740" stroke="#B9A99B" stroke-width="1" stroke-opacity="0.2"/>
+        <!-- Vertical elevation guides behind building -->
+        <line x1="860" y1="90" x2="860" y2="900" stroke="#A72C4D" stroke-width="1.2" stroke-opacity="0.24"/>
+        <line x1="1420" y1="60" x2="1420" y2="900" stroke="#B9A99B" stroke-width="1.2" stroke-opacity="0.28"/>
+        <line x1="1540" y1="0" x2="1540" y2="900" stroke="#A72C4D" stroke-width="1" stroke-dasharray="4 4" stroke-opacity="0.28"/>
+
+        <!-- Architectural Crosshair Ticks (+) -->
+        <path d="M 62 120 L 82 120 M 72 110 L 72 130" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.45"/>
+        <path d="M 62 740 L 82 740 M 72 730 L 72 750" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.45"/>
+        <path d="M 850 120 L 870 120 M 860 110 L 860 130" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.45"/>
+        <path d="M 1410 120 L 1430 120 M 1420 110 L 1420 130" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.45"/>
+      </svg>
+
+      <!-- Minimal dot matrix clusters (Reference feature) -->
+      <div class="hero-dot-matrix hero-dots-right"></div>
+      <div class="hero-dot-matrix hero-dots-stats"></div>
+    </div>
+
+    <!-- ── 2. EDITORIAL SPINE (LEFT EDGE SLIDE & SCROLL INDICATORS) ── -->
+    <div class="hero-spine" aria-hidden="true">
+      <div class="hero-spine-numbers">
+        <div class="hero-num-item active">
+          <span class="hero-num">01</span>
+          <span class="hero-num-bar"></span>
+        </div>
+        <div class="hero-num-item">
+          <span class="hero-num">02</span>
+        </div>
+        <div class="hero-num-item">
+          <span class="hero-num">03</span>
+        </div>
+      </div>
+      <div class="hero-spine-scroll">
+        <span class="hero-scroll-text">SCROLL</span>
+        <span class="hero-scroll-bar"></span>
+      </div>
+    </div>
+
+    <!-- ── 3. MAIN HERO CONTAINER ── -->
+    <div class="hero-container">
+
+      <!-- Left Content Column -->
+      <div class="hero-content-col">
+
+        <!-- Eyebrow with horizontal leader line -->
+        <div class="hero-eyebrow-row">
+          <span class="hero-eyebrow-text">SPACES · PEOPLE · PURPOSE</span>
+          <span class="hero-eyebrow-line" aria-hidden="true"></span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-headline">
+          Architecture<br>
+          Interiors & Spaces<br>
+          <span class="hero-headline-accent">Made to Last.</span>
+        </h1>
+
+        <!-- Short Description -->
+        <p class="hero-description">
+          Thoughtful design, functional spaces and timeless architecture for a better tomorrow.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-actions">
+          <a href="#work" class="btn-hero-primary">
+            OUR WORK <span class="btn-arrow">→</span>
+          </a>
+          <a href="contact.html" class="btn-hero-secondary">
+            LET'S DISCUSS
+          </a>
+        </div>
+
+        <!-- Credibility Statistics Row (3 Metrics with Line Icons) -->
+        <div class="hero-stats-row">
+
+          <!-- Stat 1: Architectural Projects -->
+          <div class="hero-stat-item">
+            <div class="hero-stat-icon" aria-hidden="true">
+              <!-- Building Line Icon -->
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.3">
+                <rect x="5" y="4" width="12" height="20" rx="1"/>
+                <path d="M17 10H23V24H17"/>
+                <line x1="8" y1="8" x2="10" y2="8"/>
+                <line x1="12" y1="8" x2="14" y2="8"/>
+                <line x1="8" y1="12" x2="10" y2="12"/>
+                <line x1="12" y1="12" x2="14" y2="12"/>
+                <line x1="8" y1="16" x2="10" y2="16"/>
+                <line x1="12" y1="16" x2="14" y2="16"/>
+                <line x1="19" y1="14" x2="21" y2="14"/>
+                <line x1="19" y1="18" x2="21" y2="18"/>
+                <line x1="9" y1="24" x2="13" y2="24"/>
+              </svg>
+            </div>
+            <div class="hero-stat-text">
+              <span class="hero-stat-num">75+</span>
+              <span class="hero-stat-label">ARCHITECTURAL<br>PROJECTS</span>
+            </div>
+          </div>
+
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+
+          <!-- Stat 2: Interiors & Workspaces -->
+          <div class="hero-stat-item">
+            <div class="hero-stat-icon" aria-hidden="true">
+              <!-- Armchair Line Icon -->
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M7 11V18H21V11"/>
+                <path d="M4 14C4 12.5 5 12 6.5 12H7V19H5.5C4.5 19 4 18.5 4 17.5V14Z"/>
+                <path d="M24 14C24 12.5 23 12 21.5 12H21V19H22.5C23.5 19 24 18.5 24 17.5V14Z"/>
+                <path d="M8 8C8 6.9 8.9 6 10 6H18C19.1 6 20 6.9 20 8V12H8V8Z"/>
+                <line x1="7" y1="21" x2="7" y2="24"/>
+                <line x1="21" y1="21" x2="21" y2="24"/>
+              </svg>
+            </div>
+            <div class="hero-stat-text">
+              <span class="hero-stat-num">40+</span>
+              <span class="hero-stat-label">INTERIORS &<br>WORKSPACES</span>
+            </div>
+          </div>
+
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+
+          <!-- Stat 3: Government & Institutional -->
+          <div class="hero-stat-item">
+            <div class="hero-stat-icon" aria-hidden="true">
+              <!-- Classical Civic Elevation Line Icon -->
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.3">
+                <path d="M14 4L4 9V11H24V9L14 4Z"/>
+                <line x1="3" y1="23" x2="25" y2="23"/>
+                <line x1="5" y1="20" x2="23" y2="20"/>
+                <line x1="7" y1="11" x2="7" y2="20"/>
+                <line x1="11" y1="11" x2="11" y2="20"/>
+                <line x1="17" y1="11" x2="17" y2="20"/>
+                <line x1="21" y1="11" x2="21" y2="20"/>
+              </svg>
+            </div>
+            <div class="hero-stat-text">
+              <span class="hero-stat-num">15+</span>
+              <span class="hero-stat-label">GOVERNMENT &<br>INSTITUTIONAL</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Visual Column (Supplied Building Cutout) -->
+      <div class="hero-visual-col">
+        <div class="hero-building-frame">
+          <img src="assets/home/hero/hero-building-cutout.png" 
+               alt="Modern multi-storey residential architecture by Meera Design Studio" 
+               class="hero-building-img"
+               loading="eager"
+               fetchpriority="high">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==========================================================================
+       3. SELECTED WORKS — EDITORIAL PORTFOLIO GRID
+       ========================================================================== -->
+<section class="sw-section" id="projects">
+    <div class="sw-container">
+
+      <!-- ── HEADER ROW ── -->
+      <div class="sw-header">
+        <div class="sw-header-left">
+          <div class="sw-eyebrow">
+            <span class="sw-eyebrow-line"></span>
+            <span class="sw-eyebrow-label">SELECTED WORKS</span>
+          </div>
+          <h2 class="sw-headline">
+            Spaces<br>
+            <span class="sw-headline-accent">that inspire.</span>
+          </h2>
+        </div>
+
+        <div class="sw-header-centre">
+          <p class="sw-intro-text">A curated selection of our architectural and interior projects, each designed with purpose, context and people in mind.</p>
+        </div>
+
+        <div class="sw-header-right">
+          <!-- Filter pills -->
+          <div class="sw-filters" role="tablist" aria-label="Filter projects by category">
+            <button class="sw-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="sw-filter" data-filter="architecture" role="tab" aria-selected="false">Architecture</button>
+            <button class="sw-filter" data-filter="interiors" role="tab" aria-selected="false">Interiors</button>
+            <button class="sw-filter" data-filter="government" role="tab" aria-selected="false">Government</button>
+            <button class="sw-filter" data-filter="private" role="tab" aria-selected="false">Private</button>
+          </div>
+          <span class="sw-header-divider" aria-hidden="true"></span>
+          <a href="projects.html" class="sw-view-all">VIEW ALL PROJECTS <span class="sw-view-all-arrow">→</span></a>
+        </div>
+      </div>
+
+      <!-- ── PROJECT GRID — VARIED EDITORIAL LAYOUT ── -->
+      <div class="sw-grid" id="swGrid">
+
+        <!-- Card 01: ITI Wagholi, Pune (Government Work) -->
+        <article class="sw-card sw-card-col1" data-category="architecture government"
+                 data-title="ITI Wagholi"
+                 data-location="Wagholi, Pune"
+                 data-desc="Government Industrial Training Institute (ITI) campus located in Wagholi, Pune. Designed with civic functional excellence, featuring a monumental entrance portico, articulated trade icons frieze celebrating technical vocational crafts, and daylight-filled workshop wings."
+                 data-images="assets/home/selected-works/iti-wagholi/iti-wagholi-01.jpg,assets/home/selected-works/iti-wagholi/iti-wagholi-02.jpg,assets/home/selected-works/iti-wagholi/iti-wagholi-03.jpg,assets/home/selected-works/iti-wagholi/iti-wagholi-04.jpg">
+          <div class="sw-card-media">
+            <img src="assets/home/selected-works/iti-wagholi/iti-wagholi-01.jpg" alt="ITI Wagholi, Pune - Industrial Training Institute" loading="lazy">
+            <div class="sw-card-scrim"></div>
+          </div>
+          <div class="sw-card-header-overlay">
+            <div class="sw-card-meta-block">
+              <div class="sw-card-num-row">
+                <span class="sw-card-num">01</span>
+                <span class="sw-card-dash">——</span>
+                <span class="sw-card-badge-photos">4 Photos</span>
+              </div>
+              <span class="sw-card-cat">GOVERNMENT WORK</span>
+              <h3 class="sw-card-title">ITI Wagholi</h3>
+              <p class="sw-card-loc">Wagholi, Pune · Industrial Training Institute</p>
+            </div>
+            <button class="sw-card-arrow-btn" aria-label="View project detail">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/>
+              </svg>
+            </button>
+          </div>
+          <div class="sw-card-hover-desc">
+            <p>Government Industrial Training Institute — civic educational campus with monumental entrance canopy and trade friezes.</p>
+          </div>
+        </article>
+
+        <!-- Card 02: Villa Pramanik (Private Architectural Project) -->
+        <article class="sw-card sw-card-col2" data-category="architecture private"
+                 data-title="Villa Pramanik"
+                 data-location="Baner Hills, Pune"
+                 data-desc="Bespoke private contemporary residence commissioned for Mr. Pramanik in Pune. Featuring multi-textured stone masonry, warm timber cladding, an open cantilevered pergola porch, glass railing terraces, and custom laser-cut jali privacy screens."
+                 data-images="assets/home/selected-works/villa-pramanik/villa-pramanik-01.jpg,assets/home/selected-works/villa-pramanik/villa-pramanik-02.jpg,assets/home/selected-works/villa-pramanik/villa-pramanik-03.jpg">
+          <div class="sw-card-media">
+            <img src="assets/home/selected-works/villa-pramanik/villa-pramanik-01.jpg" alt="Villa Mr. Pramanik - Private Architectural Project" loading="lazy">
+            <div class="sw-card-scrim"></div>
+          </div>
+          <div class="sw-card-header-overlay">
+            <div class="sw-card-meta-block">
+              <div class="sw-card-num-row">
+                <span class="sw-card-num">02</span>
+                <span class="sw-card-dash">——</span>
+                <span class="sw-card-badge-photos">3 Photos</span>
+              </div>
+              <span class="sw-card-cat">PRIVATE ARCHITECTURE</span>
+              <h3 class="sw-card-title">Villa Pramanik</h3>
+              <p class="sw-card-loc">Baner Hills, Pune · Contemporary Residence</p>
+            </div>
+            <button class="sw-card-arrow-btn" aria-label="View project detail">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/>
+              </svg>
+            </button>
+          </div>
+          <div class="sw-card-hover-desc">
+            <p>Private contemporary villa with multi-textured stone masonry, timber cladding, and pergola porch.</p>
+          </div>
+        </article>
+
+        <!-- Card 03: Residential Interior (Private Interior Project) -->
+        <article class="sw-card sw-card-col3" data-category="interiors private"
+                 data-title="Residential Interior"
+                 data-location="Pune, Maharashtra"
+                 data-desc="Bespoke luxury double-height living room and dining suite in Pune. Designed with organic wave-textured rugs, modular sectional seating, warm oak joinery, fluted wall credenza, and expansive garden-facing sliding glass facade."
+                 data-images="assets/home/selected-works/residential-interior/residential-interior-01.jpg">
+          <div class="sw-card-media">
+            <img src="assets/home/selected-works/residential-interior/residential-interior-01.jpg" alt="Residential Interior Design - Double-Height Living Suite" loading="lazy">
+            <div class="sw-card-scrim"></div>
+          </div>
+          <div class="sw-card-header-overlay">
+            <div class="sw-card-meta-block">
+              <div class="sw-card-num-row">
+                <span class="sw-card-num">03</span>
+                <span class="sw-card-dash">——</span>
+              </div>
+              <span class="sw-card-cat">INTERIORS</span>
+              <h3 class="sw-card-title">Residential Interior</h3>
+              <p class="sw-card-loc">Pune, Maharashtra · Living & Dining Suite</p>
+            </div>
+            <button class="sw-card-arrow-btn" aria-label="View project detail">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/>
+              </svg>
+            </button>
+          </div>
+          <div class="sw-card-hover-desc">
+            <p>Bespoke double-height living suite with organic textures, modular seating, and garden views.</p>
+          </div>
+        </article>
+
+        <!-- Card 04: Contemporary Bungalow (Residential Architecture) -->
+        <article class="sw-card sw-card-col4" data-category="architecture private"
+                 data-title="Contemporary Bungalow"
+                 data-location="Aundh, Pune"
+                 data-desc="Contemporary private residential bungalow in Pune. Designed with a striking natural sandstone facade tower, expansive vertical glazed window, cantilevered roof canopy, open rooftop terrace with glass balustrade, and integrated timber privacy screening."
+                 data-images="assets/home/selected-works/contemporary-bungalow/contemporary-bungalow-01.jpg">
+          <div class="sw-card-media">
+            <img src="assets/home/selected-works/contemporary-bungalow/contemporary-bungalow-01.jpg" alt="Contemporary Residential Bungalow - Private Architecture" loading="lazy">
+            <div class="sw-card-scrim"></div>
+          </div>
+          <div class="sw-card-header-overlay">
+            <div class="sw-card-meta-block">
+              <div class="sw-card-num-row">
+                <span class="sw-card-num">04</span>
+                <span class="sw-card-dash">——</span>
+              </div>
+              <span class="sw-card-cat">RESIDENTIAL ARCHITECTURE</span>
+              <h3 class="sw-card-title">Contemporary Bungalow</h3>
+              <p class="sw-card-loc">Aundh, Pune · Private Residence</p>
+            </div>
+            <button class="sw-card-arrow-btn" aria-label="View project detail">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/>
+              </svg>
+            </button>
+          </div>
+          <div class="sw-card-hover-desc">
+            <p>Private contemporary villa with natural sandstone cladding, open rooftop terrace, and timber screening.</p>
+          </div>
+        </article>
+
+        <!-- Card 05: Nirmiti Buildcon (Commercial Interior Design) -->
+        <article class="sw-card sw-card-col5" data-category="interiors private"
+                 data-title="Nirmiti Buildcon HQ"
+                 data-location="Pune, Maharashtra"
+                 data-desc="Corporate interior design for Nirmiti Buildcon headquarters in Pune. Featuring an illuminated terracotta entrance arch, curved custom reception desk, executive glass-partitioned offices, and a modern boardroom with marble conference table and custom millwork."
+                 data-images="assets/home/selected-works/nirmiti-buildcon/nirmiti-buildcon-01.jpg,assets/home/selected-works/nirmiti-buildcon/nirmiti-buildcon-02.jpg,assets/home/selected-works/nirmiti-buildcon/nirmiti-buildcon-03.jpg,assets/home/selected-works/nirmiti-buildcon/nirmiti-buildcon-04.jpg">
+          <div class="sw-card-media">
+            <img src="assets/home/selected-works/nirmiti-buildcon/nirmiti-buildcon-01.jpg" alt="Nirmiti Buildcon HQ - Commercial Interior Design" loading="lazy">
+            <div class="sw-card-scrim"></div>
+          </div>
+          <div class="sw-card-header-overlay">
+            <div class="sw-card-meta-block">
+              <div class="sw-card-num-row">
+                <span class="sw-card-num">05</span>
+                <span class="sw-card-dash">——</span>
+                <span class="sw-card-badge-photos">4 Photos</span>
+              </div>
+              <span class="sw-card-cat">COMMERCIAL INTERIORS</span>
+              <h3 class="sw-card-title">Nirmiti Buildcon HQ</h3>
+              <p class="sw-card-loc">Pune, Maharashtra · Corporate Workplace</p>
+            </div>
+            <button class="sw-card-arrow-btn" aria-label="View project detail">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/>
+              </svg>
+            </button>
+          </div>
+          <div class="sw-card-hover-desc">
+            <p>Corporate interior with illuminated terracotta reception arch, glass cabins, and executive boardroom.</p>
+          </div>
+        </article>
+
+        <!-- Card 06: Contemporary Dining Space (Residential Interior Design) -->
+        <article class="sw-card sw-card-col6" data-category="interiors private"
+                 data-title="Contemporary Dining Suite"
+                 data-location="Pune, Maharashtra"
+                 data-desc="Bespoke dining room interior design crafted by Meera Design Studio. Featuring an organic rounded timber dining table, handcrafted wood chairs with woven seating, custom floor-to-ceiling display partition divider, sheer drape treatments framing lush landscape views, and warm minimalist styling."
+                 data-images="assets/home/selected-works/dining-interior/dining-interior-01.jpg">
+          <div class="sw-card-media">
+            <img src="assets/home/selected-works/dining-interior/dining-interior-01.jpg" alt="Contemporary Dining Suite - Residential Interior Design" loading="lazy">
+            <div class="sw-card-scrim"></div>
+          </div>
+          <div class="sw-card-header-overlay">
+            <div class="sw-card-meta-block">
+              <div class="sw-card-num-row">
+                <span class="sw-card-num">06</span>
+                <span class="sw-card-dash">——</span>
+              </div>
+              <span class="sw-card-cat">RESIDENTIAL INTERIORS</span>
+              <h3 class="sw-card-title">Contemporary Dining</h3>
+              <p class="sw-card-loc">Pune, Maharashtra · Dining Suite</p>
+            </div>
+            <button class="sw-card-arrow-btn" aria-label="View project detail">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8"/>
+              </svg>
+            </button>
+          </div>
+          <div class="sw-card-hover-desc">
+            <p>Warm minimalist dining suite featuring custom floor-to-ceiling timber divider and lush garden views.</p>
+          </div>
+        </article>
+
+      </div><!-- /.sw-grid -->
+
+      <!-- ── BOTTOM STRIP ── -->
+      <div class="sw-bottom-strip">
+        <p class="sw-bottom-quote">Architecture is a collaboration — a balance of design, structure and a deeper understanding of the people who use the space.</p>
+        <span class="sw-bottom-divider" aria-hidden="true"></span>
+        <a href="#contact" class="sw-bottom-cta">LET'S CREATE THOUGHTFUL SPACES TOGETHER. <span class="sw-cta-arrow">→</span></a>
+      </div>
+
+    </div><!-- /.sw-container -->
+
+    <!-- ── PROJECT MODAL ── -->
+    <div class="sw-modal" id="swModal" role="dialog" aria-modal="true" aria-label="Project detail" hidden>
+      <div class="sw-modal-backdrop"></div>
+      <div class="sw-modal-box">
+        <button class="sw-modal-close" id="swModalClose" aria-label="Close">✕</button>
+        <div class="sw-modal-media">
+          <div class="sw-modal-main-view">
+            <img id="swModalImg" src="" alt="">
+          </div>
+          <div class="sw-modal-thumbs" id="swModalThumbs"></div>
+        </div>
+        <div class="sw-modal-body">
+          <span class="sw-modal-cat" id="swModalCat"></span>
+          <h3 class="sw-modal-title" id="swModalTitle"></h3>
+          <p class="sw-modal-loc" id="swModalLoc"></p>
+          <p class="sw-modal-desc" id="swModalDesc"></p>
+          <a href="#contact" class="sw-modal-cta">DISCUSS THIS PROJECT →</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==========================================================================
+       4. ABOUT THE STUDIO — EDITORIAL PROFILE & VILLA SHOWCASE
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-grid">
+        
+        <!-- Left Column: Studio Editorial & Credentials -->
+        <div class="about-content-col">
+          <!-- Eyebrow -->
+          <div class="about-eyebrow">
+            <span class="about-eyebrow-text">ABOUT</span>
+            <span class="about-eyebrow-line"></span>
+          </div>
+
+          <!-- Brand Title -->
+          <h2 class="about-brand-title">
+            <span class="brand-burgundy">MEERA</span>
+            <span class="brand-charcoal">DESIGN STUDIO</span>
+          </h2>
+
+          <div class="about-title-divider"></div>
+
+          <!-- Motto -->
+          <div class="about-motto">
+            <span class="motto-burgundy">GOOD DESIGN SHAPES US</span>
+            <span class="motto-charcoal">AND OUR FUTURE</span>
+          </div>
+
+          <!-- Quote / Description -->
+          <p class="about-lead">
+            At Meera Design Studio our motto is simple: &ldquo;Good Design Shapes us and Our Future&rdquo;.
+          </p>
+
+          <!-- Key Metrics -->
+          <div class="about-stats-row">
+            <div class="about-stat-item">
+              <span class="about-stat-number">10+</span>
+              <span class="about-stat-label">YEARS OF<br>EXPERIENCE</span>
+            </div>
+            <div class="about-stat-divider"></div>
+            <div class="about-stat-item">
+              <span class="about-stat-number">75+</span>
+              <span class="about-stat-label">PROJECTS<br>COMPLETED</span>
+            </div>
+            <div class="about-stat-divider"></div>
+            <div class="about-stat-item">
+              <span class="about-stat-number">100%</span>
+              <span class="about-stat-label">CLIENT<br>SATISFACTION</span>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="about-cta-wrap">
+            <a href="#work" class="about-cta-btn">
+              <span>EXPLORE OUR WORK</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Leadership / Founders Showcase -->
+        <div class="about-visual-col">
+          <div class="about-visual-frame">
+            <img src="assets/home/about/meera-design-studio-founders.jpg" alt="Meera Design Studio Founders &amp; Leadership" class="about-villa-img about-founders-img" loading="lazy" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Awards & Recognition Ribbon -->
+    <div class="about-awards-ribbon">
+      <div class="about-awards-container">
+        
+        <!-- Awards Header -->
+        <div class="about-awards-header">
+          <div class="about-awards-eyebrow-wrap">
+            <span class="about-awards-eyebrow">AWARDS &amp; RECOGNITION</span>
+            <span class="about-awards-eyebrow-line"></span>
+          </div>
+          <h3 class="about-awards-heading">
+            <span class="awards-charcoal">OUR WORK</span>
+            <span class="awards-burgundy">ACKNOWLEDGED</span>
+          </h3>
+        </div>
+
+        <!-- Awards List / Items -->
+        <div class="about-awards-list">
+          <!-- Award 1 -->
+          <div class="about-award-item">
+            <div class="about-award-badge">
+              <img src="assets/home/about/about-trophy-iaa.jpg" alt="Indian Architecture Awards 2022" class="about-trophy-thumb" />
+            </div>
+            <div class="about-award-info">
+              <span class="about-award-accent-line"></span>
+              <h4 class="about-award-title">Indian Architecture<br>Awards 2022</h4>
+              <p class="about-award-sub">Best Residential Project</p>
+            </div>
+          </div>
+
+          <div class="about-award-separator"></div>
+
+          <!-- Award 2 -->
+          <div class="about-award-item">
+            <div class="about-award-badge">
+              <img src="assets/home/about/about-trophy-yaa.jpg" alt="Young Architect Award 2019" class="about-trophy-thumb" />
+            </div>
+            <div class="about-award-info">
+              <span class="about-award-accent-line"></span>
+              <h4 class="about-award-title">Young Architect<br>Award 2019</h4>
+              <p class="about-award-sub">Excellence in Design</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- ==========================================================================
+       4b. OUR WORK — SCROLL-DRIVEN CATEGORY SHOWCASE
+       ========================================================================== -->
+  <!-- Tall scroll container — 5 categories × 100vh each -->
+  <div class="ow-scroll-driver" id="owScrollDriver">
+  <section class="ow-section" id="work">
+    <!-- ====================================================================
+         ARCHITECTURAL BACKGROUND CANVAS (Matching Reference Mockup)
+         ==================================================================== -->
+    <div class="ow-bg-canvas" aria-hidden="true">
+      <svg class="ow-bg-svg" viewBox="0 0 1600 900" preserveAspectRatio="none">
+        <defs>
+          <pattern id="archGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#A72C4D" stroke-width="0.8" stroke-opacity="0.06"/>
+          </pattern>
+        </defs>
+
+        <!-- 1. Coordinate Grid Backdrop -->
+        <rect width="100%" height="100%" fill="url(#archGrid)"/>
+
+        <!-- 2. Mid-Left Solid Burgundy Tab (Reference Feature) -->
+        <rect x="0" y="430" width="28" height="140" fill="#8E2340" rx="3" opacity="0.95"/>
+
+        <!-- 3. Top-Right Soft Blush Arc & Concentric Rings -->
+        <path d="M 1600 0 L 1150 0 A 450 450 0 0 0 1600 450 Z" fill="#A72C4D" fill-opacity="0.085"/>
+        <path d="M 1600 0 L 1020 0 A 580 580 0 0 0 1600 580" fill="none" stroke="#A72C4D" stroke-width="1.3" stroke-opacity="0.28"/>
+        <path d="M 1600 0 L 900 0 A 700 700 0 0 0 1600 700" fill="none" stroke="#A72C4D" stroke-width="1" stroke-dasharray="5 5" stroke-opacity="0.2"/>
+
+        <!-- 4. Top-Right Architectural Drafting Frame & Tick Marks -->
+        <line x1="1100" y1="90" x2="1600" y2="90" stroke="#A72C4D" stroke-width="1.2" stroke-opacity="0.3"/>
+        <line x1="1380" y1="0" x2="1380" y2="340" stroke="#A72C4D" stroke-width="1.2" stroke-opacity="0.3"/>
+        <rect x="1300" y="50" width="230" height="200" fill="none" stroke="#A72C4D" stroke-width="1.2" stroke-opacity="0.25"/>
+        <path d="M 1290 50 L 1310 50 M 1300 40 L 1300 60" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.5"/>
+        <path d="M 1520 50 L 1540 50 M 1530 40 L 1530 60" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.5"/>
+        <path d="M 1290 250 L 1310 250 M 1300 240 L 1300 260" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.5"/>
+
+        <!-- 5. Left Side Architectural Frame & Diagonal Drafting Guideline -->
+        <line x1="0" y1="140" x2="380" y2="560" stroke="#A72C4D" stroke-width="1.2" stroke-opacity="0.24" stroke-dasharray="6 4"/>
+        <rect x="40" y="220" width="160" height="360" fill="none" stroke="#A72C4D" stroke-width="1.2" stroke-opacity="0.24"/>
+        <line x1="0" y1="410" x2="260" y2="410" stroke="#A72C4D" stroke-width="1.2" stroke-opacity="0.28"/>
+        <!-- Frame ticks -->
+        <path d="M 30 220 L 50 220 M 40 210 L 40 230" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.45"/>
+        <path d="M 190 220 L 210 220 M 200 210 L 200 230" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.45"/>
+        <path d="M 30 580 L 50 580 M 40 570 L 40 590" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.45"/>
+        <path d="M 190 580 L 210 580 M 200 570 L 200 590" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.45"/>
+
+        <!-- 6. Bottom-Left Solid Burgundy Fan -->
+        <path d="M 0 900 L 0 680 A 220 220 0 0 1 220 900 Z" fill="#8E2340" opacity="0.95"/>
+
+        <!-- 7. Bottom-Left Concentric Arcs -->
+        <path d="M 0 540 A 360 360 0 0 1 360 900" fill="none" stroke="#A72C4D" stroke-width="1.4" stroke-opacity="0.35"/>
+        <path d="M 0 400 A 500 500 0 0 1 500 900" fill="none" stroke="#A72C4D" stroke-width="1.1" stroke-dasharray="5 5" stroke-opacity="0.25"/>
+        <path d="M 0 260 A 640 640 0 0 1 640 900" fill="none" stroke="#A72C4D" stroke-width="0.9" stroke-opacity="0.16"/>
+
+        <!-- 8. Bottom-Left Drafting Lines & Crosshairs -->
+        <line x1="0" y1="730" x2="420" y2="730" stroke="#A72C4D" stroke-width="1.2" stroke-opacity="0.28"/>
+        <line x1="140" y1="460" x2="140" y2="900" stroke="#A72C4D" stroke-width="1.2" stroke-opacity="0.28"/>
+        <rect x="70" y="580" width="160" height="200" fill="none" stroke="#A72C4D" stroke-width="1.2" stroke-opacity="0.24"/>
+        <path d="M 60 580 L 80 580 M 70 570 L 70 590" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.45"/>
+        <path d="M 220 580 L 240 580 M 230 570 L 230 590" stroke="#A72C4D" stroke-width="1.5" stroke-opacity="0.45"/>
+
+        <!-- 9. Architectural Blueprint Metadata Typography in Canvas -->
+        <text x="260" y="878" font-family="'Century Gothic', sans-serif" font-size="9" font-weight="700" letter-spacing="3" fill="#A72C4D" fill-opacity="0.42">MEERA DESIGN STUDIO // INTEGRATED PRACTICE MATRIX</text>
+        <text x="730" y="878" font-family="'Century Gothic', sans-serif" font-size="8.5" font-weight="700" letter-spacing="2.5" fill="#A72C4D" fill-opacity="0.35">PUNE, MAHARASHTRA · LAT 18.5204° N · LONG 73.8567° E</text>
+        <text x="1270" y="38" font-family="'Century Gothic', sans-serif" font-size="8.5" font-weight="700" letter-spacing="2.5" fill="#A72C4D" fill-opacity="0.38">PORTFOLIO INDEX // ARCHITECTURAL PROJECTS</text>
+      </svg>
+
+      <!-- Dot Matrix Fields Left & Right (Crisp CSS dot patterns) -->
+      <div class="ow-bg-dots-left"></div>
+      <div class="ow-bg-dots-right"></div>
+    </div>
+
+    <div class="ow-container">
+
+      <!-- ── 1. LEFT VERTICAL CATEGORY RAIL (STEPPER) ── -->
+      <aside class="ow-sidebar" aria-label="Project Categories">
+        <div class="ow-stepper-wrap">
+          <div class="ow-stepper-rail" aria-hidden="true">
+            <div class="ow-rail-fill" id="owRailFill"></div>
+            <div class="ow-rail-bead" id="owRailBead"></div>
+          </div>
+
+          <div class="ow-stepper-list" role="tablist" aria-label="Work Categories">
+            <!-- Step 1: Architecture -->
+            <button class="ow-step-item active" data-tab="architecture" id="owTabArch" role="tab" aria-selected="true">
+              <span class="ow-step-text">ARCHITECTURE</span>
+              <span class="ow-step-node">
+                <span class="ow-node-dot"></span>
+              </span>
+            </button>
+
+            <!-- Step 2: Government Projects -->
+            <button class="ow-step-item" data-tab="government" id="owTabGov" role="tab" aria-selected="false">
+              <span class="ow-step-text">GOVERNMENT<br>PROJECTS</span>
+              <span class="ow-step-node">
+                <span class="ow-node-dot"></span>
+              </span>
+            </button>
+
+            <!-- Step 3: Private Projects -->
+            <button class="ow-step-item" data-tab="private" id="owTabPriv" role="tab" aria-selected="false">
+              <span class="ow-step-text">PRIVATE<br>PROJECTS</span>
+              <span class="ow-step-node">
+                <span class="ow-node-dot"></span>
+              </span>
+            </button>
+
+            <!-- Step 4: Interior Residential -->
+            <button class="ow-step-item" data-tab="interior" id="owTabInt" role="tab" aria-selected="false">
+              <span class="ow-step-text">INTERIOR<br>RESIDENTIAL</span>
+              <span class="ow-step-node">
+                <span class="ow-node-dot"></span>
+              </span>
+            </button>
+
+            <!-- Step 5: Commercial -->
+            <button class="ow-step-item" data-tab="commercial" id="owTabComm" role="tab" aria-selected="false">
+              <span class="ow-step-text">COMMERCIAL<br>PROJECTS</span>
+              <span class="ow-step-node">
+                <span class="ow-node-dot"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ── 2. MAIN SHOWCASE CONTENT ── -->
+      <div class="ow-content-area">
+
+        <!-- Header Row -->
+        <header class="ow-header">
+          <div class="ow-header-info">
+            <div class="ow-eyebrow">
+              <span class="ow-eyebrow-line" aria-hidden="true"></span>
+              <span class="ow-eyebrow-title">OUR WORK</span>
+              <span class="ow-eyebrow-sep">/</span>
+              <span class="ow-category-name"><span class="ow-heading-accent" id="owAccent">Architectural</span> <span id="owSuffix">Projects</span></span>
+            </div>
+            <div class="ow-subheading-lead-wrap">
+              <span class="ow-subheading-lead-line" aria-hidden="true"></span>
+              <p class="ow-subheading" id="owSubheading">
+                Thoughtfully designed spaces that balance functionality, aesthetics and long-lasting value.
+              </p>
+            </div>
+          </div>
+
+          <div class="ow-header-cta-wrap">
+            <a href="projects.html" class="ow-view-all-link">
+              <span class="ow-view-all-circle">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M2.5 7H11.5M11.5 7L7.5 3M11.5 7L7.5 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="ow-view-all-label">VIEW ALL PROJECTS</span>
+            </a>
+          </div>
+        </header>
+
+
+
+        <!-- Bento 4-Card Grid -->
+        <div class="ow-bento" id="owBento">
+
+          <!-- ── CARD 01: LEFT TALL CARD (SUDHA CLASSIC) ── -->
+          <article class="ow-card ow-card-tall" id="owCard1"
+                   data-category="architecture residential"
+                   data-title="Sudha Classic"
+                   data-location="Pune, Maharashtra"
+                   data-desc="Architectural project building Sudha Classic in Pune. Designed with articulated classical balconies, vertical louvers, landscaped perimeter, and elegant proportions.">
+            <div class="ow-card-media">
+              <img id="owCard1Img" src="assets/home/our-work/sudha-classic.jpg" alt="Sudha Classic - Architectural Project Building, Pune" loading="lazy">
+              <div class="ow-card-scrim"></div>
+              <div class="ow-card-badge-top">
+                <span class="ow-badge-num" id="owCard1Num">01</span>
+                <span class="ow-badge-line">——</span>
+              </div>
+            </div>
+
+            <!-- HOVER INFO OVERLAY -->
+            <div class="ow-hover-info">
+              <span class="ow-hover-tag" id="owCard1HoverTag">ARCHITECTURE</span>
+              <h3 class="ow-hover-title" id="owCard1HoverTitle">Sudha Classic</h3>
+              <p class="ow-hover-loc" id="owCard1HoverLoc">Pune, Maharashtra</p>
+              <p class="ow-hover-desc" id="owCard1HoverDesc">Multi-storey residential architectural building with classical balconies, vertical louvers, and elegant proportions.</p>
+              <button class="ow-hover-cta">VIEW PROJECT →</button>
+            </div>
+
+            <!-- ORGANIC BURGUNDY BOTTOM WAVE OVERLAY -->
+            <div class="ow-wave-banner ow-wave-burgundy" id="owCard1Wave">
+              <svg class="ow-wave-bg" viewBox="0 0 520 150" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="owBurgundyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#731932"/>
+                    <stop offset="100%" stop-color="#A72C4D"/>
+                  </linearGradient>
+                </defs>
+                <path d="M 0,65 C 90,75 160,35 250,18 C 340,3 410,14 520,32 L 520,150 L 0,150 Z" fill="url(#owBurgundyGrad)"/>
+              </svg>
+              <div class="ow-wave-inner">
+                <div class="ow-card-titles">
+                  <h3 class="ow-project-name" id="owCard1Title">Sudha Classic</h3>
+                  <span class="ow-project-tag" id="owCard1Tag">ARCHITECTURE</span>
+                </div>
+                <button class="ow-circle-btn ow-circle-white" aria-label="View Sudha Classic details">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M2.5 7H11.5M11.5 7L7.5 3M11.5 7L7.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── RIGHT COLUMN: CARD 02 (TOP WIDE) + ROW 2 (CARDS 03 & 04) ── -->
+          <div class="ow-right-group">
+
+            <!-- ── CARD 02: WIDE CARD (SHREERAM CUBICLES) ── -->
+            <article class="ow-card ow-card-wide" id="owCard2"
+                     data-category="architecture commercial"
+                     data-title="ShreeRam Cubicles"
+                     data-location="Pune, Maharashtra"
+                     data-desc="Commercial retail complex ShreeRam Cubicles in Pune, featuring prominent two-level retail shopfronts, glazed pedestrian balconies, and modern architectural form.">
+              <div class="ow-card-media">
+                <img id="owCard2Img" src="assets/home/our-work/shreeram-cubicles.jpg" alt="ShreeRam Cubicles - Commercial Complex, Pune" loading="lazy">
+                <div class="ow-card-scrim"></div>
+                <div class="ow-card-badge-top">
+                  <span class="ow-badge-num" id="owCard2Num">02</span>
+                  <span class="ow-badge-line">——</span>
+                </div>
+              </div>
+
+              <!-- HOVER INFO OVERLAY -->
+              <div class="ow-hover-info">
+                <span class="ow-hover-tag" id="owCard2HoverTag">COMMERCIAL</span>
+                <h3 class="ow-hover-title" id="owCard2HoverTitle">ShreeRam Cubicles</h3>
+                <p class="ow-hover-loc" id="owCard2HoverLoc">Pune, Maharashtra</p>
+                <p class="ow-hover-desc" id="owCard2HoverDesc">Multi-level commercial complex featuring open glass retail shopfronts and pedestrian balconies.</p>
+                <button class="ow-hover-cta">VIEW PROJECT →</button>
+              </div>
+
+              <!-- ORGANIC CREAM BOTTOM WAVE OVERLAY -->
+              <div class="ow-wave-banner ow-wave-cream" id="owCard2Wave">
+                <svg class="ow-wave-bg" viewBox="0 0 680 110" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M 0,50 C 130,55 240,15 380,28 C 490,40 560,18 680,22 L 680,110 L 0,110 Z" fill="#FAF7F2"/>
+                </svg>
+                <div class="ow-wave-inner">
+                  <div class="ow-card-titles">
+                    <h3 class="ow-project-name" id="owCard2Title">ShreeRam Cubicles</h3>
+                    <span class="ow-project-tag" id="owCard2Tag">COMMERCIAL</span>
+                  </div>
+                  <button class="ow-circle-btn ow-circle-burgundy" aria-label="View ShreeRam Cubicles details">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M2.5 7H11.5M11.5 7L7.5 3M11.5 7L7.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- ── ROW 2: CARDS 03 & 04 (COMPACT CARDS) ── -->
+            <div class="ow-subgrid">
+
+              <!-- ── CARD 03: COMPACT CARD 1 (THE VILLA) ── -->
+              <article class="ow-card ow-card-compact" id="owCard3"
+                       data-category="architecture private"
+                       data-title="The Villa"
+                       data-location="Pune, Maharashtra"
+                       data-desc="Bespoke private architectural residence featuring clean geometric volumes, cantilevered roof canopy, vertical wood louvers, and covered car portico.">
+                <div class="ow-card-media">
+                  <img id="owCard3Img" src="assets/home/our-work/the-villa.jpg" alt="The Villa - Private Architectural Project, Pune" loading="lazy">
+                  <div class="ow-card-scrim"></div>
+                  <div class="ow-card-badge-top">
+                    <span class="ow-badge-num" id="owCard3Num">03</span>
+                    <span class="ow-badge-line">——</span>
+                  </div>
+                </div>
+
+                <!-- HOVER INFO OVERLAY -->
+                <div class="ow-hover-info">
+                  <span class="ow-hover-tag" id="owCard3HoverTag">PRIVATE PROJECT</span>
+                  <h3 class="ow-hover-title" id="owCard3HoverTitle">The Villa</h3>
+                  <p class="ow-hover-loc" id="owCard3HoverLoc">Pune, Maharashtra</p>
+                  <p class="ow-hover-desc" id="owCard3HoverDesc">Bespoke private architectural villa with clean geometric lines, cantilevered roof canopy, and private portico.</p>
+                  <button class="ow-hover-cta">VIEW PROJECT →</button>
+                </div>
+
+                <!-- ORGANIC CREAM BOTTOM WAVE OVERLAY -->
+                <div class="ow-wave-banner ow-wave-cream" id="owCard3Wave">
+                  <svg class="ow-wave-bg" viewBox="0 0 340 100" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M 0,38 C 70,45 130,12 210,22 C 260,30 300,15 340,18 L 340,100 L 0,100 Z" fill="#FAF7F2"/>
+                  </svg>
+                  <div class="ow-wave-inner">
+                    <div class="ow-card-titles">
+                      <h3 class="ow-project-name" id="owCard3Title">The Villa</h3>
+                      <span class="ow-project-tag" id="owCard3Tag">PRIVATE PROJECT</span>
+                    </div>
+                    <button class="ow-circle-btn ow-circle-burgundy" aria-label="View The Villa details">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 7H11.5M11.5 7L7.5 3M11.5 7L7.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+              <!-- ── CARD 04: COMPACT CARD 2 (CONTEMPORARY RESIDENCE) ── -->
+              <article class="ow-card ow-card-compact" id="owCard4"
+                       data-category="architecture private"
+                       data-title="Contemporary Residence"
+                       data-location="Pune, Maharashtra"
+                       data-desc="Modern two-storey private architectural residence featuring crisp white geometry, vibrant ochre accents, rooftop garden pergola, and integrated planters.">
+                <div class="ow-card-media">
+                  <img id="owCard4Img" src="assets/home/our-work/contemporary-residence.jpg" alt="Contemporary Residence - Private Project, Pune" loading="lazy">
+                  <div class="ow-card-scrim"></div>
+                  <div class="ow-card-badge-top">
+                    <span class="ow-badge-num" id="owCard4Num">04</span>
+                    <span class="ow-badge-line">——</span>
+                  </div>
+                </div>
+
+                <!-- HOVER INFO OVERLAY -->
+                <div class="ow-hover-info">
+                  <span class="ow-hover-tag" id="owCard4HoverTag">PRIVATE PROJECT</span>
+                  <h3 class="ow-hover-title" id="owCard4HoverTitle">Contemporary Residence</h3>
+                  <p class="ow-hover-loc" id="owCard4HoverLoc">Pune, Maharashtra</p>
+                  <p class="ow-hover-desc" id="owCard4HoverDesc">Modern private residence with crisp geometry, vibrant ochre highlights, and rooftop garden pergola.</p>
+                  <button class="ow-hover-cta">VIEW PROJECT →</button>
+                </div>
+
+                <!-- ORGANIC CREAM BOTTOM WAVE OVERLAY -->
+                <div class="ow-wave-banner ow-wave-cream" id="owCard4Wave">
+                  <svg class="ow-wave-bg" viewBox="0 0 340 100" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M 0,38 C 70,45 130,12 210,22 C 260,30 300,15 340,18 L 340,100 L 0,100 Z" fill="#FAF7F2"/>
+                  </svg>
+                  <div class="ow-wave-inner">
+                    <div class="ow-card-titles">
+                      <h3 class="ow-project-name" id="owCard4Title">Contemporary Residence</h3>
+                      <span class="ow-project-tag" id="owCard4Tag">PRIVATE PROJECT</span>
+                    </div>
+                    <button class="ow-circle-btn ow-circle-burgundy" aria-label="View Contemporary Residence details">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 7H11.5M11.5 7L7.5 3M11.5 7L7.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+
+            </div><!-- /.ow-subgrid -->
+
+          </div><!-- /.ow-right-group -->
+
+        </div><!-- /.ow-bento -->
+
+        <!-- Bottom Timeline & Navigation Bar (Matching Reference Layout) -->
+        <div class="ow-bottom-bar">
+          <div class="ow-progress-track">
+            <div class="ow-progress-fill" id="owProgressFill"></div>
+          </div>
+          <div class="ow-bottom-controls">
+            <span class="ow-progress-label" id="owProgressLabel">01 / 05</span>
+            <div class="ow-arrow-group">
+              <button class="ow-nav-circle-btn" id="owBtnPrev" aria-label="Previous Category">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M7.5 9.5L4 6L7.5 2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button class="ow-nav-circle-btn" id="owBtnNext" aria-label="Next Category">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.ow-content-area -->
+
+    </div><!-- /.ow-container -->
+
+  </section>
+  </div><!-- /.ow-scroll-driver -->
+
+  <!-- ==========================================================================
+       4b. BEFORE & AFTER — RESIDENTIAL & COMMERCIAL SPATIAL TRANSFORMATIONS
+       ========================================================================== -->
+  <section class="section-transformation" id="transformation">
+    <div class="trans-container">
+
+      <!-- ── ROW 1: COMMERCIAL PROJECT (Nirmiti Group) ── -->
+      <div class="trans-dual-row trans-row-commercial">
+        
+        <!-- Left: Text Column -->
+        <div class="trans-text-col">
+          <div class="ba-row-eyebrow-wrap">
+            <span class="ba-row-dash" aria-hidden="true"></span>
+            <span class="ba-row-eyebrow">BEFORE &amp; AFTER</span>
+          </div>
+
+          <h2 class="ba-row-title">
+            Redefining<br>
+            <span class="ba-title-accent">Work Environments</span>
+          </h2>
+
+          <p class="ba-row-desc">
+            A raw shell transformed into an executive corporate reception with custom acoustic fluting, refined ambient illumination, and bespoke millwork.
+          </p>
+
+          <div class="ba-sub-tag-wrap">
+            <span class="ba-sub-dash" aria-hidden="true"></span>
+            <span class="ba-sub-label">COMMERCIAL PROJECT &bull; NIRMITI GROUP</span>
+          </div>
+        </div>
+
+        <!-- Right: Slider Column -->
+        <div class="trans-slider-col">
+          <div class="ba-card-frame" id="baCardComm" style="--split-pos: 50%;">
+            <div class="ba-card-img-wrap">
+              <!-- After Image (Base layer visible on right) -->
+              <img src="assets/home/transformations/trans-commercial-after.jpg" alt="Nirmiti Group reception after transformation" class="ba-img-layer ba-img-after" loading="lazy">
+              
+              <!-- Before Image (Clipped overlay layer visible on left) -->
+              <div class="ba-img-before-clip" aria-hidden="true">
+                <img src="assets/home/transformations/trans-commercial-before.jpg" alt="Bare commercial space before transformation" class="ba-img-layer ba-img-before" loading="lazy">
+              </div>
+
+              <!-- Badges -->
+              <span class="ba-pill-badge ba-pill-before">BEFORE</span>
+              <span class="ba-pill-badge ba-pill-after">AFTER</span>
+            </div>
+
+            <!-- Draggable Divider Line & Knob Handle -->
+            <div class="ba-split-divider" id="baDividerComm" aria-hidden="true">
+              <div class="ba-split-line"></div>
+              <div class="ba-knob-circle">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M5 3L2 7L5 11" stroke="#A72C4D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 3L12 7L9 11" stroke="#A72C4D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="ba-split-line"></div>
+            </div>
+
+            <!-- Range input for drag interaction & keyboard accessibility -->
+            <input type="range" min="0" max="100" value="50" class="ba-slider-input" id="baInputComm" aria-label="Slide to compare commercial before and after transformation">
+          </div>
+        </div>
+
+      </div><!-- /.trans-row-commercial -->
+
+
+      <!-- ── ROW 2: RESIDENTIAL PROJECT (Sage Master Suite) ── -->
+      <div class="trans-dual-row trans-row-residential">
+
+        <!-- Left: Slider Column -->
+        <div class="trans-slider-col">
+          <div class="ba-card-frame" id="baCardRes" style="--split-pos: 50%;">
+            <div class="ba-card-img-wrap">
+              <!-- After Image (Base layer visible on right) -->
+              <img src="assets/home/transformations/trans-residential-after.jpg" alt="Sage Master Suite bedroom after transformation" class="ba-img-layer ba-img-after" loading="lazy">
+              
+              <!-- Before Image (Clipped overlay layer visible on left) -->
+              <div class="ba-img-before-clip" aria-hidden="true">
+                <img src="assets/home/transformations/trans-residential-before.jpg" alt="Bare bedroom before transformation" class="ba-img-layer ba-img-before" loading="lazy">
+              </div>
+
+              <!-- Badges -->
+              <span class="ba-pill-badge ba-pill-before">BEFORE</span>
+              <span class="ba-pill-badge ba-pill-after">AFTER</span>
+            </div>
+
+            <!-- Draggable Divider Line & Knob Handle -->
+            <div class="ba-split-divider" id="baDividerRes" aria-hidden="true">
+              <div class="ba-split-line"></div>
+              <div class="ba-knob-circle">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M5 3L2 7L5 11" stroke="#A72C4D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9 3L12 7L9 11" stroke="#A72C4D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="ba-split-line"></div>
+            </div>
+
+            <!-- Range input for drag interaction & keyboard accessibility -->
+            <input type="range" min="0" max="100" value="50" class="ba-slider-input" id="baInputRes" aria-label="Slide to compare residential before and after transformation">
+          </div>
+        </div>
+
+        <!-- Right: Text Column -->
+        <div class="trans-text-col">
+          <div class="ba-row-eyebrow-wrap">
+            <span class="ba-row-dash" aria-hidden="true"></span>
+            <span class="ba-row-eyebrow">BEFORE &amp; AFTER</span>
+          </div>
+
+          <h2 class="ba-row-title">
+            From Vision to<br>
+            <span class="ba-title-accent">Living Spaces</span>
+          </h2>
+
+          <p class="ba-row-desc">
+            Thoughtful spatial design, custom upholstered joinery, and tailored lighting transform an unfinished concrete bedroom into a serene master sanctuary.
+          </p>
+
+          <div class="ba-sub-tag-wrap">
+            <span class="ba-sub-dash" aria-hidden="true"></span>
+            <span class="ba-sub-label">RESIDENTIAL PROJECT &bull; SAGE MASTER SUITE</span>
+          </div>
+        </div>
+
+      </div><!-- /.trans-row-residential -->
+
+    </div><!-- /.trans-container -->
+  </section>
+
+    <!-- ==========================================================================
+       5b. CLIENT TESTIMONIALS — TRUSTED BY OUR CLIENTS (GOOGLE REVIEWS)
+       ========================================================================== -->
+  <section class="section section-testimonials" id="testimonials">
+    <div class="container testi-container">
+
+      <!-- ── Top Hero Header: Title, Metrics & Architectural Quote Banner ── -->
+      <div class="testi-header-hero">
+        
+        <!-- Left Column: Title, Subtitle & Social Proof Metrics -->
+        <div class="testi-header-left">
+          
+          <div class="testi-eyebrow-wrap">
+            <span class="testi-eyebrow-text">TESTIMONIALS</span>
+            <span class="testi-eyebrow-accent-line" aria-hidden="true"></span>
+          </div>
+
+          <h2 class="testi-hero-title">
+            Trusted by our <span class="testi-title-accent">Clients</span>
+          </h2>
+
+          <p class="testi-hero-desc">
+            From homes to large-scale institutional spaces, our clients appreciate our commitment to design, quality and timely delivery.
+          </p>
+
+          <!-- Compact Social Proof Metrics Strip (No Happy Clients / 15+ Google Reviews text) -->
+          <div class="testi-metrics-bar">
+            
+            <!-- Metric 1: Rating -->
+            <div class="testi-metric-block">
+              <div class="metric-score-row">
+                <span class="metric-score-big">4.9</span>
+                <span class="metric-score-sub">/5</span>
+                <div class="metric-stars-mini" aria-label="5 out of 5 stars">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="metric-v-divider" aria-hidden="true"></div>
+
+            <!-- Metric 2: Typologies -->
+            <div class="testi-metric-block">
+              <div class="metric-val-with-icon">
+                <svg class="metric-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A72C4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+                <span class="metric-lbl">Residential, Commercial &amp; Government Projects</span>
+              </div>
+            </div>
+
+            <div class="metric-v-divider" aria-hidden="true"></div>
+
+            <!-- Metric 3: Trust -->
+            <div class="testi-metric-block">
+              <div class="metric-val-with-icon">
+                <svg class="metric-svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A72C4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <polyline points="9 12 11 14 15 10"/>
+                </svg>
+                <span class="metric-lbl">Trusted Across Maharashtra</span>
+              </div>
+            </div>
+
+          </div><!-- /.testi-metrics-bar -->
+
+        </div><!-- /.testi-header-left -->
+
+        <!-- Right Column: Visual Sunlit Architectural Photo with Editorial Quote -->
+        <div class="testi-header-right-visual" aria-hidden="true">
+          <img src="assets/home/testimonials/testi-hero-banner.png" alt="" class="testi-banner-img" loading="lazy">
+          <div class="testi-banner-quote-box">
+            <span class="testi-banner-quote-mark">“</span>
+            <blockquote class="testi-banner-quote-text">
+              Well planned, professionally executed and delivered beyond expectations.
+            </blockquote>
+          </div>
+        </div><!-- /.testi-header-right-visual -->
+
+      </div><!-- /.testi-header-hero -->
+
+
+      <!-- ── Reviews Carousel Container with Nav Arrows ── -->
+      <div class="testi-carousel-wrapper">
+
+        <!-- Left Navigation Arrow -->
+        <button type="button" class="testi-nav-arrow testi-nav-prev" id="testiPrevBtn" aria-label="Previous testimonial">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2B231E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        </button>
+
+        <!-- Scrollable Cards Track (No face photos, real Google reviews) -->
+        <div class="testi-cards-track" id="testiTrack">
+
+          <!-- Card 1: Shrinivas Kshirsagar -->
+          <article class="testi-modern-card" data-category="residential">
+            <div class="testi-card-top">
+              <div class="testi-stars-gold" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <svg class="google-logo-svg" width="16" height="16" viewBox="0 0 24 24" aria-label="Google Review">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+            </div>
+            <p class="testi-card-quote">
+              “They truly are a one-stop solution for everything from initial planning and innovative architectural concepts to final civil execution. What impressed me most was commitment of Mr. Bhushankumar Gaikwad and his entire team to timely delivery without compromising on quality.”
+            </p>
+            <div class="testi-author-meta">
+              <div class="testi-author-initial">SK</div>
+              <div class="testi-author-info">
+                <strong class="author-name">Shrinivas Kshirsagar</strong>
+                <span class="author-role">Turnkey Client</span>
+                <span class="author-loc">Pune</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Suyog Gunjal (Shy) -->
+          <article class="testi-modern-card" data-category="residential">
+            <div class="testi-card-top">
+              <div class="testi-stars-gold" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <svg class="google-logo-svg" width="16" height="16" viewBox="0 0 24 24" aria-label="Google Review">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+            </div>
+            <p class="testi-card-quote">
+              “Within 3-4 days sir shared 1st design using modern day layouts which looked awesome. Cost wise also their services are affordable. Me and my family are very excited to start execution of our dream bungalow as per sir's design!”
+            </p>
+            <div class="testi-author-meta">
+              <div class="testi-author-initial">SG</div>
+              <div class="testi-author-info">
+                <strong class="author-name">Suyog Gunjal (Shy)</strong>
+                <span class="author-role">Bungalow Owner</span>
+                <span class="author-loc">Local Guide &bull; Pune</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: NEHA CHAVADA -->
+          <article class="testi-modern-card" data-category="interior">
+            <div class="testi-card-top">
+              <div class="testi-stars-gold" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <svg class="google-logo-svg" width="16" height="16" viewBox="0 0 24 24" aria-label="Google Review">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+            </div>
+            <p class="testi-card-quote">
+              “The team showed great professionalism and technical expertise throughout the project. Excellent quality, timely completion and smooth communication. Highly recommended!”
+            </p>
+            <div class="testi-author-meta">
+              <div class="testi-author-initial">NC</div>
+              <div class="testi-author-info">
+                <strong class="author-name">NEHA CHAVADA</strong>
+                <span class="author-role">Interior Client</span>
+                <span class="author-loc">Pune</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Swapnil Sardar -->
+          <article class="testi-modern-card" data-category="commercial">
+            <div class="testi-card-top">
+              <div class="testi-stars-gold" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <svg class="google-logo-svg" width="16" height="16" viewBox="0 0 24 24" aria-label="Google Review">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+            </div>
+            <p class="testi-card-quote">
+              “I've never known anyone more sincere, honest, &amp; hard-working guy other than Bhushan Gaikwad. He stands out from everyone else coz of his dedication towards work, great understanding and humble nature.”
+            </p>
+            <div class="testi-author-meta">
+              <div class="testi-author-initial">SS</div>
+              <div class="testi-author-info">
+                <strong class="author-name">Swapnil Sardar</strong>
+                <span class="author-role">Corporate Client</span>
+                <span class="author-loc">Local Guide &bull; Pune</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: shridhar manglori -->
+          <article class="testi-modern-card" data-category="government">
+            <div class="testi-card-top">
+              <div class="testi-stars-gold" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <svg class="google-logo-svg" width="16" height="16" viewBox="0 0 24 24" aria-label="Google Review">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+            </div>
+            <p class="testi-card-quote">
+              “This is a very cooperative and multi disciplinary firm with substantial project management and construction management services. Their approach and cooperation with the clients is much appreciable.”
+            </p>
+            <div class="testi-author-meta">
+              <div class="testi-author-initial">SM</div>
+              <div class="testi-author-info">
+                <strong class="author-name">shridhar manglori</strong>
+                <span class="author-role">Project Management Client</span>
+                <span class="author-loc">Maharashtra</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Priyanka Kumbhar -->
+          <article class="testi-modern-card" data-category="residential">
+            <div class="testi-card-top">
+              <div class="testi-stars-gold" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <svg class="google-logo-svg" width="16" height="16" viewBox="0 0 24 24" aria-label="Google Review">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+            </div>
+            <p class="testi-card-quote">
+              “The builder is very talented, experienced, professional and detail-oriented. He gives very good suggestions based on construction experience. Provides a complete package from excavation to interiors.”
+            </p>
+            <div class="testi-author-meta">
+              <div class="testi-author-initial">PK</div>
+              <div class="testi-author-info">
+                <strong class="author-name">Priyanka Kumbhar</strong>
+                <span class="author-role">Home Owner</span>
+                <span class="author-loc">Local Guide &bull; Ravet, Pune</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: akshay Patil's -->
+          <article class="testi-modern-card" data-category="commercial">
+            <div class="testi-card-top">
+              <div class="testi-stars-gold" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <svg class="google-logo-svg" width="16" height="16" viewBox="0 0 24 24" aria-label="Google Review">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+            </div>
+            <p class="testi-card-quote">
+              “Working with BG Associates is great experience. The important thing is that they are well experienced in construction industry and with best service.”
+            </p>
+            <div class="testi-author-meta">
+              <div class="testi-author-initial">AP</div>
+              <div class="testi-author-info">
+                <strong class="author-name">akshay Patil's</strong>
+                <span class="author-role">Commercial Client</span>
+                <span class="author-loc">Maharashtra</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8: Rupesh Barve -->
+          <article class="testi-modern-card" data-category="government">
+            <div class="testi-card-top">
+              <div class="testi-stars-gold" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <svg class="google-logo-svg" width="16" height="16" viewBox="0 0 24 24" aria-label="Google Review">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+            </div>
+            <p class="testi-card-quote">
+              “Bhushan sir has great experience in construction and he provides incredible consulting services with outstanding technical clarity.”
+            </p>
+            <div class="testi-author-meta">
+              <div class="testi-author-initial">RB</div>
+              <div class="testi-author-info">
+                <strong class="author-name">Rupesh Barve</strong>
+                <span class="author-role">Civil Consulting Client</span>
+                <span class="author-loc">Pune</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9: Dr. Chandrakant Shende -->
+          <article class="testi-modern-card" data-category="interior">
+            <div class="testi-card-top">
+              <div class="testi-stars-gold" aria-label="5 out of 5 stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <svg class="google-logo-svg" width="16" height="16" viewBox="0 0 24 24" aria-label="Google Review">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+            </div>
+            <p class="testi-card-quote">
+              “Amazing and creative work. Highly impressed by their aesthetic sense, quality craftsmanship and attention to detail throughout the space.”
+            </p>
+            <div class="testi-author-meta">
+              <div class="testi-author-initial">CS</div>
+              <div class="testi-author-info">
+                <strong class="author-name">Dr. Chandrakant Shende</strong>
+                <span class="author-role">Interior Design Client</span>
+                <span class="author-loc">Pune</span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.testi-cards-track -->
+
+        <!-- Right Navigation Arrow -->
+        <button type="button" class="testi-nav-arrow testi-nav-next" id="testiNextBtn" aria-label="Next testimonial">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2B231E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </button>
+
+      </div><!-- /.testi-carousel-wrapper -->
+
+
+      <!-- ── Bottom Actions (Pagination Dots & Read More Pill) ── -->
+      <div class="testi-bottom-actions">
+        
+        <!-- Pagination Indicator Dots -->
+        <div class="testi-dots-row" id="testiDots" role="tablist" aria-label="Testimonial slider navigation">
+          <button type="button" class="testi-dot active" data-index="0" aria-label="Slide 1"></button>
+          <button type="button" class="testi-dot" data-index="1" aria-label="Slide 2"></button>
+          <button type="button" class="testi-dot" data-index="2" aria-label="Slide 3"></button>
+          <button type="button" class="testi-dot" data-index="3" aria-label="Slide 4"></button>
+        </div>
+
+      </div><!-- /.testi-bottom-actions -->
+
+
+      <!-- ── Bottom Google Review Love Banner Strip (Compact Sleek Bar) ── -->
+      <div class="testi-google-banner-strip">
+        
+        <!-- Architectural Sketch Watermark (Left) -->
+        <div class="google-strip-sketch-bg" aria-hidden="true">
+          <img src="assets/projects/hero/purpose-sketch-clean.png" alt="" class="strip-sketch-img" loading="lazy">
+        </div>
+
+        <!-- Center Typography -->
+        <div class="google-strip-center">
+          <h3 class="google-strip-title">Our clients love us on Google</h3>
+          <p class="google-strip-sub">15+ reviews &bull; 4.9/5 rating &bull; Real experiences</p>
+        </div>
+
+        <!-- Right Rating & Link -->
+        <div class="google-strip-right">
+          <svg class="google-strip-g-logo" width="22" height="22" viewBox="0 0 24 24" aria-label="Google">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+            <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.98 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+          </svg>
+          <div class="google-strip-stars-wrap">
+            <div class="google-strip-rating">
+              <strong>4.9</strong><span>/5</span>
+            </div>
+            <div class="google-strip-stars" aria-label="5 out of 5 stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+          <a href="https://www.google.com/search?q=Meera+Design+Studio+Pune+reviews" target="_blank" rel="noopener" class="google-strip-link">
+            <span>View all on Google</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div><!-- /.testi-google-banner-strip -->
+
+    </div><!-- /.testi-container -->
+  </section>
+
+
+  <!-- ==========================================================================
+       6. CONTACT — COMMISSIONS & ARCHITECTURAL INQUIRIES
+       ========================================================================== -->
+  <section class="section section-contact" id="contact">
+    <div class="container contact-container">
+
+      <!-- ── Unified Modern Contact Card ── -->
+      <div class="contact-unified-card">
+
+        <!-- ── Left: Architectural Visual Showcase with Floating Maroon Card ── -->
+        <div class="contact-card-visual">
+          <img src="assets/home/contact/contact-studio-lounge.jpg" alt="Meera Design Studio Interior Lounge" class="contact-visual-img" loading="lazy">
+          
+          <!-- Floating Maroon Brand Card -->
+          <div class="contact-floating-quote">
+            <span class="floating-quote-dash" aria-hidden="true"></span>
+            <p class="floating-quote-text">
+              Let’s create<br>
+              meaningful spaces<br>
+              together.
+            </p>
+            <span class="floating-quote-brand">MEERA DESIGN STUDIO</span>
+          </div>
+        </div>
+
+        <!-- ── Right: Modern Contact Form & Studio Details ── -->
+        <div class="contact-card-body">
+
+          <!-- Subtle Top-Right Watermark Arc Curve -->
+          <div class="contact-card-watermark" aria-hidden="true">
+            <svg width="240" height="240" viewBox="0 0 240 240" fill="none">
+              <circle cx="240" cy="0" r="160" stroke="#A72C4D" stroke-opacity="0.10" stroke-width="1.5"/>
+              <circle cx="240" cy="0" r="220" stroke="#A72C4D" stroke-opacity="0.06" stroke-width="1.5"/>
+            </svg>
+          </div>
+
+          <!-- Header & Eyebrow -->
+          <div class="contact-body-header">
+            <div class="contact-eyebrow-row">
+              <span class="contact-eyebrow-dash" aria-hidden="true"></span>
+              <span class="contact-eyebrow-text">GET IN TOUCH</span>
+            </div>
+            <h2 class="contact-main-heading">
+              We’d love to<br>
+              hear about your <span class="contact-title-accent">project.</span>
+            </h2>
+            <p class="contact-main-desc">
+              Whether it's a new build, renovation or an interior transformation, our team is here to help you bring your vision to life.
+            </p>
+          </div>
+
+          <!-- Interactive Form -->
+          <form class="contact-modern-form" id="inquiryForm" novalidate>
+
+            <!-- Row 1: Full Name & Email -->
+            <div class="contact-form-row duo-col">
+              <div class="contact-field-group">
+                <label for="clientName" class="contact-field-label">Full Name <span class="req">*</span></label>
+                <input type="text" id="clientName" name="name" class="contact-field-input" placeholder="Enter your full name" required autocomplete="name">
+              </div>
+              <div class="contact-field-group">
+                <label for="clientEmail" class="contact-field-label">Email Address <span class="req">*</span></label>
+                <input type="email" id="clientEmail" name="email" class="contact-field-input" placeholder="Enter your email address" required autocomplete="email">
+              </div>
+            </div>
+
+            <!-- Row 2: Phone & Project Type -->
+            <div class="contact-form-row duo-col">
+              <div class="contact-field-group">
+                <label for="clientPhone" class="contact-field-label">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="clientPhone" name="phone" class="contact-field-input" placeholder="Enter your phone number" required autocomplete="tel">
+              </div>
+              <div class="contact-field-group">
+                <label for="projectType" class="contact-field-label">Project Type</label>
+                <div class="contact-select-wrap">
+                  <select id="projectType" name="projectType" class="contact-field-input contact-field-select">
+                    <option value="" disabled selected>Select a project type</option>
+                    <option value="Architecture & Civil Construction">Architecture &amp; Civil Construction</option>
+                    <option value="Luxury Interior Design">Luxury Interior Design</option>
+                    <option value="Commercial & Office Spaces">Commercial &amp; Office Spaces</option>
+                    <option value="Bespoke Villa / Bungalow">Bespoke Villa / Bungalow</option>
+                    <option value="Government & Institutional">Government &amp; Institutional</option>
+                    <option value="Renovation & Turnkey PMC">Renovation &amp; Turnkey PMC</option>
+                  </select>
+                  <svg class="select-caret-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                    <path d="M2.5 4.5L6 8L9.5 4.5" stroke="#7A6F65" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 3: Project Location -->
+            <div class="contact-form-row single-col">
+              <div class="contact-field-group">
+                <label for="projectLocation" class="contact-field-label">Project Location</label>
+                <input type="text" id="projectLocation" name="location" class="contact-field-input" placeholder="Enter project location (City)">
+              </div>
+            </div>
+
+            <!-- Row 4: Tell us about your project -->
+            <div class="contact-form-row single-col">
+              <div class="contact-field-group">
+                <label for="projectBrief" class="contact-field-label">Tell us about your project <span class="req">*</span></label>
+                <textarea id="projectBrief" name="brief" class="contact-field-input contact-field-textarea" placeholder="Share your requirements, ideas or any specific details..." required rows="3"></textarea>
+              </div>
+            </div>
+
+            <!-- Row 5: Submit Button -->
+            <div class="contact-form-submit-wrap">
+              <button type="submit" class="contact-btn-submit" id="btnSubmitInquiry">
+                <span class="btn-text">SEND MESSAGE</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <!-- Security Assurance Note -->
+            <div class="contact-security-bar">
+              <svg class="security-lock-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7A6F65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+              <span>Your information is secure and will only be used to respond to your enquiry.</span>
+            </div>
+
+          </form>
+
+          <!-- Success State -->
+          <div class="form-success-card" id="formSuccessCard" hidden>
+            <div class="success-icon-circle" aria-hidden="true">✓</div>
+            <h4 class="success-title">Inquiry Prepared Successfully!</h4>
+            <p class="success-message">
+              Thank you, <strong id="successNameDisplay"></strong>. Your project brief has been formatted. Click below to continue directly to WhatsApp to send your specifications to our team:
+            </p>
+            <div class="success-actions">
+              <a href="#" id="successWhatsAppBtn" target="_blank" class="btn-success-wa">
+                <span>Open in WhatsApp</span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <button type="button" class="btn-success-reset" id="btnResetForm">
+                Send Another Inquiry
+              </button>
+            </div>
+            <span class="success-note">We typically review and respond within 24 business hours.</span>
+          </div>
+
+          <!-- Bottom Direct Studio Contact Info Bar -->
+          <div class="contact-info-footer-strip">
+
+            <div class="contact-footer-item">
+              <div class="footer-item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A72C4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="footer-item-text">
+                <span class="footer-item-label">Call Us</span>
+                <a href="tel:+917498987520" class="footer-item-val">+91 74989 87520</a>
+              </div>
+            </div>
+
+            <div class="contact-footer-item">
+              <div class="footer-item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A72C4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="footer-item-text">
+                <span class="footer-item-label">Email Us</span>
+                <a href="mailto:hello@meeradesignstudio.com" class="footer-item-val">hello@meeradesignstudio.com</a>
+              </div>
+            </div>
+
+            <div class="contact-footer-item">
+              <div class="footer-item-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A72C4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="footer-item-text">
+                <span class="footer-item-label">Our Studio</span>
+                <span class="footer-item-val-text">Pune, Maharashtra</span>
+              </div>
+            </div>
+
+          </div><!-- /.contact-info-footer-strip -->
+
+        </div><!-- /.contact-card-body -->
+
+      </div><!-- /.contact-unified-card -->
+
+    </div><!-- /.contact-container -->
+  </section>
+
+  <!-- ==========================================================================
+       7. FOOTER — ESSENTIAL INFORMATION ONLY
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>MEERA DESIGN STUDIO</h3>
+          <p>Architecture • Interior Design • Structural Engineering</p>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="#transformation">Transformation</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="footer-contact-brief">
+          Pune, Maharashtra, India<br>
+          <a href="tel:+919763565674">+91 9763565674</a><br>
+          <a href="mailto:contact@meeradesignstudio.com">contact@meeradesignstudio.com</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2019 — 2026 Meera Design Studio. All rights reserved.
+        </div>
+        <div>
+          Ar. Manisha B. Gaikwad (COA Reg.) • Er. Bhushankumar A. Gaikwad
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
