@@ -127,13 +127,13 @@ button {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #F5F0E9;
-  border-bottom: 1px solid rgba(185, 169, 155, 0.28);
+  background: #FFFFFF;
+  border-bottom: 1px solid rgba(185, 169, 155, 0.18);
   transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .site-header.scrolled {
-  background: rgba(245, 240, 233, 0.96);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 20px rgba(35, 25, 20, 0.05);
@@ -281,7 +281,7 @@ button {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: #F5F0E9;
+  background-color: #FFFFFF;
   overflow: hidden;
   display: flex;
   align-items: stretch;
@@ -596,13 +596,14 @@ button {
 
 /* ── RIGHT VISUAL COLUMN (BUILDING CUTOUT) ── */
 .hero-visual-col {
-  flex: 1 1 46%;
+  flex: 1 1 48%;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: flex-start;
   position: relative;
   z-index: 2;
   pointer-events: none;
+  padding-left: 1rem;
 }
 
 .hero-building-frame {
@@ -611,17 +612,18 @@ button {
   height: 100%;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
+  transform: translateX(-55px);
 }
 
 .hero-building-img {
   width: auto;
-  height: 92vh;
-  max-height: 820px;
+  height: 96vh;
+  max-height: 890px;
   object-fit: contain;
-  object-position: bottom right;
+  object-position: bottom center;
   display: block;
-  filter: drop-shadow(0 20px 35px rgba(35, 25, 20, 0.14));
+  filter: drop-shadow(0 20px 40px rgba(35, 25, 20, 0.16));
   pointer-events: auto;
 }
 
@@ -630,9 +632,12 @@ button {
   .hero-container {
     padding: 0 2.5rem 0 4.8rem;
   }
+  .hero-building-frame {
+    transform: translateX(-35px);
+  }
   .hero-building-img {
-    height: 85vh;
-    max-height: 720px;
+    height: 88vh;
+    max-height: 770px;
   }
   .hero-stats-row {
     gap: 1.4rem;
@@ -649,15 +654,18 @@ button {
   .hero-headline {
     font-size: clamp(2.3rem, 3.8vw, 3.4rem);
   }
+  .hero-building-frame {
+    transform: translateX(-20px);
+  }
   .hero-building-img {
-    height: 75vh;
-    max-height: 620px;
+    height: 78vh;
+    max-height: 660px;
   }
 }
 
 @media (max-width: 992px) {
   .site-header {
-    background: #F5F0E9;
+    background: #FFFFFF;
   }
   .header-inner {
     padding: 0.85rem 1.8rem;
@@ -697,10 +705,13 @@ button {
     justify-content: center;
     margin-top: 1rem;
   }
+  .hero-building-frame {
+    transform: none;
+  }
   .hero-building-img {
     height: auto;
-    max-height: 520px;
-    max-width: 90%;
+    max-height: 560px;
+    max-width: 92%;
     margin: 0 auto;
     object-position: bottom center;
   }
