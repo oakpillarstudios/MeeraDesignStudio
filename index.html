@@ -32,6 +32,7 @@
           <li><a href="#transformation" class="nav-link">TRANSFORMATION</a></li>
           <li><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
           <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+          <li class="mobile-nav-cta-item"><a href="contact.html" class="mobile-drawer-cta">START CONSULTATION →</a></li>
         </ul>
       </nav>
 
@@ -1599,32 +1600,32 @@
             </p>
           </div>
 
-          <!-- Interactive Form -->
+          <!-- Interactive Form (Compact 3-Row Architecture: Only Name & WhatsApp Required) -->
           <form class="contact-modern-form" id="inquiryForm" novalidate>
 
-            <!-- Row 1: Full Name & Email -->
+            <!-- Row 1: Full Name & WhatsApp Number (THE ONLY REQUIRED FIELDS) -->
             <div class="contact-form-row duo-col">
               <div class="contact-field-group">
                 <label for="clientName" class="contact-field-label">Full Name <span class="req">*</span></label>
-                <input type="text" id="clientName" name="name" class="contact-field-input" placeholder="Enter your full name" required autocomplete="name">
+                <input type="text" id="clientName" name="name" class="contact-field-input" placeholder="Your full name" required autocomplete="name">
               </div>
               <div class="contact-field-group">
-                <label for="clientEmail" class="contact-field-label">Email Address <span class="req">*</span></label>
-                <input type="email" id="clientEmail" name="email" class="contact-field-input" placeholder="Enter your email address" required autocomplete="email">
+                <label for="clientPhone" class="contact-field-label">WhatsApp Number <span class="req">*</span></label>
+                <input type="tel" id="clientPhone" name="phone" class="contact-field-input" placeholder="+91 98765 43210" required autocomplete="tel">
               </div>
             </div>
 
-            <!-- Row 2: Phone & Project Type -->
+            <!-- Row 2: Email & Project Type (Optional) -->
             <div class="contact-form-row duo-col">
               <div class="contact-field-group">
-                <label for="clientPhone" class="contact-field-label">Phone Number <span class="req">*</span></label>
-                <input type="tel" id="clientPhone" name="phone" class="contact-field-input" placeholder="Enter your phone number" required autocomplete="tel">
+                <label for="clientEmail" class="contact-field-label">Email Address <span class="opt-label">(Optional)</span></label>
+                <input type="email" id="clientEmail" name="email" class="contact-field-input" placeholder="your.email@example.com" autocomplete="email">
               </div>
               <div class="contact-field-group">
-                <label for="projectType" class="contact-field-label">Project Type</label>
+                <label for="projectType" class="contact-field-label">Project Type <span class="opt-label">(Optional)</span></label>
                 <div class="contact-select-wrap">
                   <select id="projectType" name="projectType" class="contact-field-input contact-field-select">
-                    <option value="" disabled selected>Select a project type</option>
+                    <option value="" selected>Select project type (optional)</option>
                     <option value="Architecture & Civil Construction">Architecture &amp; Civil Construction</option>
                     <option value="Luxury Interior Design">Luxury Interior Design</option>
                     <option value="Commercial & Office Spaces">Commercial &amp; Office Spaces</option>
@@ -1639,26 +1640,22 @@
               </div>
             </div>
 
-            <!-- Row 3: Project Location -->
-            <div class="contact-form-row single-col">
+            <!-- Row 3: Project Location & Brief Requirements (Optional) -->
+            <div class="contact-form-row duo-col">
               <div class="contact-field-group">
-                <label for="projectLocation" class="contact-field-label">Project Location</label>
-                <input type="text" id="projectLocation" name="location" class="contact-field-input" placeholder="Enter project location (City)">
+                <label for="projectLocation" class="contact-field-label">Project Location <span class="opt-label">(Optional)</span></label>
+                <input type="text" id="projectLocation" name="location" class="contact-field-input" placeholder="City (e.g. Pune / Ravet)">
+              </div>
+              <div class="contact-field-group">
+                <label for="projectBrief" class="contact-field-label">Project Note <span class="opt-label">(Optional)</span></label>
+                <input type="text" id="projectBrief" name="brief" class="contact-field-input" placeholder="Brief note / scope of work">
               </div>
             </div>
 
-            <!-- Row 4: Tell us about your project -->
-            <div class="contact-form-row single-col">
-              <div class="contact-field-group">
-                <label for="projectBrief" class="contact-field-label">Tell us about your project <span class="req">*</span></label>
-                <textarea id="projectBrief" name="brief" class="contact-field-input contact-field-textarea" placeholder="Share your requirements, ideas or any specific details..." required rows="3"></textarea>
-              </div>
-            </div>
-
-            <!-- Row 5: Submit Button -->
+            <!-- Row 4: Submit Button & Security Note -->
             <div class="contact-form-submit-wrap">
               <button type="submit" class="contact-btn-submit" id="btnSubmitInquiry">
-                <span class="btn-text">SEND MESSAGE</span>
+                <span class="btn-text">CONNECT ON WHATSAPP</span>
                 <span class="btn-arrow" aria-hidden="true">→</span>
               </button>
             </div>
@@ -1669,7 +1666,7 @@
                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
                 <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
               </svg>
-              <span>Your information is secure and will only be used to respond to your enquiry.</span>
+              <span>Direct consultation with Mr. Bhushankumar Gaikwad & Ar. Manisha Gaikwad.</span>
             </div>
 
           </form>
@@ -1783,5 +1780,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+
 </body>
 </html>

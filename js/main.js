@@ -18,19 +18,33 @@ document.addEventListener('DOMContentLoaded', () => {
     handleScroll();
   }
 
-  // 1. Mobile Menu Toggle
+  // 1. Mobile Menu Toggle & Accessible Drawer
   const menuToggle = document.getElementById('menuToggle');
   const mainNav = document.getElementById('mainNav');
 
   if (menuToggle && mainNav) {
-    menuToggle.addEventListener('click', () => {
-      mainNav.classList.toggle('mobile-open');
-    });
+    const toggleMenu = (open) => {
+      const isOpen = open !== undefined ? open : !mainNav.classList.contains('mobile-open');
+      mainNav.classList.toggle('mobile-open', isOpen);
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.innerHTML = isOpen ? '&times;' : '&#9776;';
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close Navigation Menu' : 'Open Navigation Menu');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    };
+
+    menuToggle.addEventListener('click', () => toggleMenu());
 
     mainNav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        mainNav.classList.remove('mobile-open');
+        toggleMenu(false);
       });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mainNav.classList.contains('mobile-open')) {
+        toggleMenu(false);
+        menuToggle.focus();
+      }
     });
   }
 
@@ -83,14 +97,25 @@ document.addEventListener('DOMContentLoaded', () => {
       const location = locationInput ? locationInput.value.trim() : '';
       const brief = briefInput ? briefInput.value.trim() : '';
 
-      if (!name || !phone || !brief) {
+      if (!name || !phone) {
         if (!name && nameInput) nameInput.focus();
         else if (!phone && phoneInput) phoneInput.focus();
-        else if (!brief && briefInput) briefInput.focus();
         return;
       }
 
-      const message = `Hello Meera Design Studio,\n\nI would like to discuss a project consultation:\n• Full Name: ${name}\n• Phone Number: ${phone}\n${email ? `• Email: ${email}\n` : ''}${type ? `• Project Type: ${type}\n` : ''}• Project Location: ${location || 'Pune / Maharashtra'}\n• Project Details:\n${brief}`;
+      const messageParts = [
+        'Hello Meera Design Studio,',
+        '',
+        'I would like to inquire about a project consultation:',
+        `• Name: ${name}`,
+        `• WhatsApp: ${phone}`
+      ];
+      if (email) messageParts.push(`• Email: ${email}`);
+      if (type) messageParts.push(`• Project Type: ${type}`);
+      if (location) messageParts.push(`• Location: ${location}`);
+      if (brief) messageParts.push(`• Requirements: ${brief}`);
+
+      const message = messageParts.join('\n');
       const waUrl = `https://wa.me/917498987520?text=${encodeURIComponent(message)}`;
 
       // Open WhatsApp in new tab
