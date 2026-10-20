@@ -6851,15 +6851,13 @@ button {
     display: block !important;
   }
 
+  /* Neutral bottom gradient: 0% pink/color tint, crystal clear natural photo */
   .sw-card-scrim {
     position: absolute !important;
     inset: 0 !important;
     opacity: 1 !important;
-    background: linear-gradient(180deg, rgba(20, 15, 12, 0.05) 0%, rgba(20, 15, 12, 0.4) 45%, rgba(20, 15, 12, 0.9) 100%) !important;
-  }
-
-  .sw-card.sw-card-col1 .sw-card-scrim {
-    background: linear-gradient(180deg, rgba(20, 15, 12, 0.05) 0%, rgba(167, 44, 77, 0.45) 45%, rgba(135, 25, 54, 0.96) 100%) !important;
+    background: linear-gradient(180deg, transparent 52%, rgba(12, 9, 7, 0.38) 78%, rgba(12, 9, 7, 0.88) 100%) !important;
+    pointer-events: none !important;
   }
 
   .sw-card-header-overlay {
@@ -6952,15 +6950,11 @@ button {
     transform: none !important;
   }
 
-  .sw-card.sw-card-col1 .sw-card-arrow-btn {
-    background: #A72C4D !important;
-    border-color: #A72C4D !important;
-  }
-
+  .sw-card.sw-card-col1 .sw-card-arrow-btn,
   .sw-card.sw-card-col6 .sw-card-arrow-btn {
-    background: #F6EBEF !important;
-    border-color: rgba(167, 44, 77, 0.25) !important;
-    color: #A72C4D !important;
+    background: rgba(255, 255, 255, 0.22) !important;
+    border: 1px solid rgba(255, 255, 255, 0.45) !important;
+    color: #FFFFFF !important;
   }
 
   .sw-card-loc,
@@ -7149,16 +7143,11 @@ button {
     min-height: 180px;
     border-radius: 14px;
   }
-  .ow-wave-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .ow-project-name {
-    font-size: 0.86rem;
-  }
-  .ow-project-tag {
-    font-size: 0.58rem;
+  /* On mobile: do not show wave design banner or heavy info overlay that covers the photo */
+  .ow-wave-banner,
+  .ow-wave-bg,
+  .ow-hover-info {
+    display: none !important;
   }
 
   /* Spatial Transformations (Mobile) */
@@ -7401,12 +7390,10 @@ button {
     opacity: 1 !important;
     transform: none !important;
   }
-  .ow-hover-info {
-    display: none;
-  }
-  .ow-wave-banner {
-    opacity: 1 !important;
-    transform: none !important;
+  .ow-hover-info,
+  .ow-wave-banner,
+  .ow-wave-bg {
+    display: none !important;
   }
 }
 
