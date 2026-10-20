@@ -607,7 +607,7 @@ button {
   flex-shrink: 0;
 }
 
-/* ── RIGHT VISUAL COLUMN (BUILDING CUTOUT) ── */
+/* ── RIGHT VISUAL COLUMN (BUILDING CUTOUT & ARCHITECTURAL GEOMETRY) ── */
 .hero-visual-col {
   flex: 1 1 48%;
   display: flex;
@@ -619,8 +619,39 @@ button {
   padding-left: 1rem;
 }
 
+.hero-building-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-visual-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transform: translateX(-55px);
+}
+
+.hero-visual-svg {
+  width: 100%;
+  height: 96vh;
+  max-height: 890px;
+  display: block;
+  overflow: visible;
+}
+
 .hero-building-frame {
   position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
   display: flex;
@@ -645,10 +676,12 @@ button {
   .hero-container {
     padding: 0 2.5rem 0 4.8rem;
   }
-  .hero-building-frame {
+  .hero-building-frame,
+  .hero-visual-bg {
     transform: translateX(-35px);
   }
-  .hero-building-img {
+  .hero-building-img,
+  .hero-visual-svg {
     height: 88vh;
     max-height: 770px;
   }
@@ -667,10 +700,12 @@ button {
   .hero-headline {
     font-size: clamp(2.3rem, 3.8vw, 3.4rem);
   }
-  .hero-building-frame {
+  .hero-building-frame,
+  .hero-visual-bg {
     transform: translateX(-20px);
   }
-  .hero-building-img {
+  .hero-building-img,
+  .hero-visual-svg {
     height: 78vh;
     max-height: 660px;
   }
@@ -718,10 +753,16 @@ button {
     justify-content: center;
     margin-top: 1rem;
   }
-  .hero-building-frame {
+  .hero-building-stage {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .hero-building-frame,
+  .hero-visual-bg {
     transform: none;
   }
-  .hero-building-img {
+  .hero-building-img,
+  .hero-visual-svg {
     height: auto;
     max-height: 560px;
     max-width: 92%;
@@ -5883,10 +5924,12 @@ button {
   .hero-container {
     padding: 0 2.5rem;
   }
-  .hero-building-frame {
+  .hero-building-frame,
+  .hero-visual-bg {
     transform: translateX(-35px);
   }
-  .hero-building-img {
+  .hero-building-img,
+  .hero-visual-svg {
     height: 88vh;
     max-height: 770px;
   }
@@ -6447,26 +6490,57 @@ button {
     background: rgba(135, 110, 90, 0.25);
   }
 
-  /* Hero Building Cutout */
+  /* Hero Building Cutout & Anchored Background Framing Geometry */
   .hero-visual-col {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 0.2rem;
+    margin-top: 0.5rem;
     padding-left: 0;
+    overflow: hidden;
+  }
+  .hero-building-stage {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .hero-visual-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .hero-visual-svg {
+    width: 100%;
+    height: 100%;
+    max-height: 380px;
+    display: block;
   }
   .hero-building-frame {
     transform: none;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
   }
   .hero-building-img {
-    width: 90%;
-    max-width: 370px;
+    width: auto;
+    max-width: 88%;
     height: auto;
-    max-height: 410px;
+    max-height: 360px;
     object-fit: contain;
     object-position: bottom center;
   }
