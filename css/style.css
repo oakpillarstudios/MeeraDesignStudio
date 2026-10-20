@@ -6759,61 +6759,73 @@ button {
     box-shadow: 0 3px 10px rgba(167, 44, 77, 0.25);
   }
 
-  /* 2-Column Asymmetric Bento Grid */
+  /* ── Adaptive Landscape & Square Bento Grid (Mobile) ── */
   .sw-grid {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 10px !important;
+    gap: 12px !important;
     width: 100% !important;
   }
 
-  /* Card 01: ITI Wagholi (Tall Left Card) */
+  /* Card 01: ITI Wagholi (16:9 Landscape - Full-Width Showcase) */
   .sw-card.sw-card-col1 {
-    grid-column: 1 !important;
-    grid-row: 1 / span 2 !important;
-    height: 100% !important;
-    min-height: 290px !important;
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9.8 !important;
+    min-height: 200px !important;
+    max-height: 240px !important;
     border-radius: 14px !important;
   }
 
-  /* Card 02: Villa Pramanik (Top Right Card) */
+  /* Card 02: Villa Pramanik (Near-Square 1.25 Ratio - Left Column) */
   .sw-card.sw-card-col2 {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-    height: 140px !important;
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3.2 !important;
+    min-height: 135px !important;
     border-radius: 12px !important;
   }
 
-  /* Card 03: Residential Interior (Middle Right Card) */
+  /* Card 03: Residential Interior (Right Column) */
   .sw-card.sw-card-col3 {
     grid-column: 2 !important;
-    grid-row: 2 !important;
-    height: 140px !important;
+    grid-row: auto !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3.2 !important;
+    min-height: 135px !important;
     border-radius: 12px !important;
   }
 
-  /* Card 04: Contemporary Bungalow (Middle Left Card) */
+  /* Card 04: Contemporary Bungalow (Left Column) */
   .sw-card.sw-card-col4 {
     grid-column: 1 !important;
-    grid-row: 3 !important;
-    height: 140px !important;
+    grid-row: auto !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3.2 !important;
+    min-height: 135px !important;
     border-radius: 12px !important;
   }
 
-  /* Card 05: Nirmiti Buildcon HQ (Bottom Left Card) */
+  /* Card 05: Nirmiti Buildcon HQ (Right Column) */
   .sw-card.sw-card-col5 {
-    grid-column: 1 !important;
-    grid-row: 4 !important;
-    height: 140px !important;
+    grid-column: 2 !important;
+    grid-row: auto !important;
+    height: auto !important;
+    aspect-ratio: 4 / 3.2 !important;
+    min-height: 135px !important;
     border-radius: 12px !important;
   }
 
-  /* Card 06: Contemporary Dining Suite (Tall Right Card) */
+  /* Card 06: Contemporary Dining Suite (16:9 Landscape - Full-Width Showcase) */
   .sw-card.sw-card-col6 {
-    grid-column: 2 !important;
-    grid-row: 3 / span 2 !important;
-    height: 100% !important;
-    min-height: 290px !important;
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9.8 !important;
+    min-height: 195px !important;
+    max-height: 235px !important;
     border-radius: 14px !important;
   }
 
